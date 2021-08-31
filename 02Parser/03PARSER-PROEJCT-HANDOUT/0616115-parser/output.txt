@@ -1,0 +1,2 @@
+Because we had many input files I didnt create a single output.txt instead 
+every output is inside the "Output" folder

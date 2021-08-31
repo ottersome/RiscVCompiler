@@ -1,0 +1,123 @@
+********************************
+*       No syntax error!       *
+********************************
+L0:NodeType: Root
+	L1:NodeType: ID val:foo
+	L1:NodeType: DECLARATIONS
+		L2:NodeType: ID_LIST
+			L3:NodeType: ID val:input
+			L3:NodeType: ID val:output
+			L3:NodeType: ID val:error
+		L2:NodeType: TYPE_PROGRAM_ARG
+	L1:NodeType: DECLARATIONS_ROOT
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:abc
+			L3:NodeType: TYPE_INT
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:abc
+			L3:NodeType: TYPE_REAL
+				L4:NodeType: TYPE_ARR
+					L5:NodeType: Number,Val: 23.000000
+					L5:NodeType: Number,Val: 57.000000
+				L4:NodeType: TYPE_ARR
+					L5:NodeType: Number,Val: 23.000000
+					L5:NodeType: Number,Val: 57.000000
+	L1:NodeType: SUBPDECLARATIONS
+		L2:NodeType: FUNCTION
+			L3:NodeType: ID val:abc
+			L3:NodeType: ARGUMENTS
+				L4:NodeType: ARGUMENT
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:x
+					L5:NodeType: TYPE_INT
+			L3:NodeType: TYPE_INT
+			L3:NodeType: DECLARATIONS_ROOT
+			L3:NodeType: SUBPDECLARATIONS
+			L3:NodeType: STATEMENT_LIST
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:x
+						L6:NodeType: ARR_SUFFIXES
+					L5:NodeType: Number,Val: 1.000000
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:x
+						L6:NodeType: ARR_SUFFIXES
+					L:5,Id:44,BinaryExpr,oprtr: ADD
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:x
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: Number,Val: 1.000000
+	L1:NodeType: STATEMENT_LIST
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:abc
+				L4:NodeType: ARR_SUFFIXES
+			L3:NodeType: Number,Val: 1.000000
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have added variable "input" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "output" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "error" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "abc" in line 3 to symbol table. At depth 0 
+Semantic Error: Redeclaration on Variable abc at depth 0
+            We will proceed by deleting this new name from the table and leaving the old one.
+Semantic Error: Redeclaration on Function abc at depth 0
+                We will proceed by deleting this new name from the table and leaving the old one.
+                Furthermore, although the function name is not being added to the table we will do semantic check
+                on its body to catch as many errors as possible.
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have added variable "x" in line 7 to symbol table. At depth 1 
+
+
+NOTICE: The var "x" is now initialized 
+
+
+NOTICE: The var "x" is now initialized 
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : x, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+
+
+NOTICE: The var "abc" is now initialized 
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : input, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : output, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : error, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : abc, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+
+
+
+We are now printing all the symbol tables encountered
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : input, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : output, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : error, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : abc, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO Parameters 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : x, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO Parameters 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+********************************
+*    Semantic Check Done!      *
+********************************

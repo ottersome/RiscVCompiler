@@ -1,0 +1,897 @@
+
+1-th token(type:PROGRAM) on line 1 :
+PROGRAM
+End of token 1 
+
+2-th token(type:IDENTIFIER) on line 1 :
+mytest
+End of token 2 
+
+3-th token(type:LEFT PARENTHESIS) on line 1 :
+(
+End of token 3 
+
+4-th token(type:IDENTIFIER) on line 1 :
+input
+End of token 4 
+
+5-th token(type:COMMA) on line 1 :
+,
+End of token 5 
+
+6-th token(type:IDENTIFIER) on line 1 :
+output
+End of token 6 
+
+7-th token(type:COMMA) on line 1 :
+,
+End of token 7 
+
+8-th token(type:IDENTIFIER) on line 1 :
+error
+End of token 8 
+
+9-th token(type:RIGHT PARENTHESIS) on line 1 :
+)
+End of token 9 
+
+10-th token(type:SEMICOLON) on line 1 :
+;
+End of token 10 
+
+11-th token(type:COMMENT) on line 3 :
+//incorrect symbols test
+End of token 11 
+
+12-th token(type:VAR) on line 4 :
+var
+End of token 12 
+
+13-th token(type:IDENTIFIER) on line 4 :
+a
+End of token 13 
+
+14-th token(type:COMMA) on line 4 :
+,
+End of token 14 
+
+15-th token(type:NUM) on line 4 :
+0
+End of token 15 
+
+16-th token(type:IDENTIFIER) on line 4 :
+aa
+End of token 16 
+
+17-th token(type:COMMA) on line 4 :
+,
+End of token 17 
+
+18-th token(type:IDENTIFIER) on line 4 :
+bb
+End of token 18 
+
+19-th token(type:COLON) on line 4 :
+:
+End of token 19 
+
+20-th token(type:INTEGER) on line 4 :
+integer
+End of token 20 
+
+21-th token(type:SEMICOLON) on line 4 :
+;
+End of token 21 
+
+22-th token(type:VAR) on line 5 :
+var
+End of token 22 
+
+23-th token(type:IDENTIFIER) on line 5 :
+gg
+End of token 23 
+
+24-th token(type:COMMA) on line 5 :
+,
+End of token 24 
+
+25-th token(type:IDENTIFIER) on line 5 :
+hh
+End of token 25 
+
+26-th token(type:COMMA) on line 5 :
+,
+End of token 26 
+
+27-th token(type:IDENTIFIER) on line 5 :
+mm
+End of token 27 
+
+28-th token(type:COMMA) on line 5 :
+,
+End of token 28 
+
+29-th token(type:IDENTIFIER) on line 5 :
+pp
+End of token 29 
+
+30-th token(type:COMMA) on line 5 :
+,
+End of token 30 
+
+31-th token(type:IDENTIFIER) on line 5 :
+pp
+End of token 31 
+
+32-th token(type:NUM) on line 5 :
+5
+End of token 32 
+
+33-th token(type:COLON) on line 5 :
+:
+End of token 33 
+
+34-th token(type:REAL) on line 5 :
+real
+End of token 34 
+
+35-th token(type:SEMICOLON) on line 5 :
+;
+End of token 35 
+
+36-th token(type:VAR) on line 8 :
+var
+End of token 36 
+
+37-th token(type:IDENTIFIER) on line 8 :
+di
+End of token 37 
+
+38-th token(type:COMMA) on line 8 :
+,
+End of token 38 
+
+39-th token(type:IDENTIFIER) on line 8 :
+ei
+End of token 39 
+
+40-th token(type:COMMA) on line 8 :
+,
+End of token 40 
+
+41-th token(type:IDENTIFIER) on line 8 :
+ei00
+End of token 41 
+
+42-th token(type:COMMA) on line 8 :
+,
+End of token 42 
+
+43-th token(type:IDENTIFIER) on line 8 :
+ei
+End of token 43 
+
+44-th token(type:SEMICOLON) on line 8 :
+;
+End of token 44 
+
+45-th token(type:COMMA) on line 8 :
+,
+End of token 45 
+
+46-th token(type:MINUS) on line 8 :
+-
+End of token 46 
+
+47-th token(type:COLON) on line 8 :
+:
+End of token 47 
+
+48-th token(type:ARRAY) on line 8 :
+array
+End of token 48 
+
+49-th token(type:LEFT SQUARE BRACKET) on line 8 :
+[
+End of token 49 
+
+50-th token(type:NUM) on line 8 :
+1
+End of token 50 
+
+51-th token(type:LDOTS) on line 8 :
+..
+End of token 51 
+
+52-th token(type:NUM) on line 8 :
+10
+End of token 52 
+
+53-th token(type:RIGTH SQUARE BRACKET) on line 8 :
+]
+End of token 53 
+
+54-th token(type:OF) on line 8 :
+of
+End of token 54 
+
+55-th token(type:INTEGER) on line 8 :
+integer
+End of token 55 
+
+56-th token(type:SEMICOLON) on line 8 :
+;
+End of token 56 
+
+57-th token(type:VAR) on line 9 :
+var
+End of token 57 
+
+58-th token(type:IDENTIFIER) on line 9 :
+dr
+End of token 58 
+
+59-th token(type:COMMA) on line 9 :
+,
+End of token 59 
+
+60-th token(type:IDENTIFIER) on line 9 :
+er
+End of token 60 
+
+61-th token(type:COMMA) on line 9 :
+,
+End of token 61 
+
+62-th token(type:IDENTIFIER) on line 9 :
+er00
+End of token 62 
+
+63-th token(type:COMMA) on line 9 :
+,
+End of token 63 
+
+64-th token(type:IDENTIFIER) on line 9 :
+er
+End of token 64 
+
+65-th token(type:SEMICOLON) on line 9 :
+;
+End of token 65 
+
+66-th token(type:COMMA) on line 9 :
+,
+End of token 66 
+
+67-th token(type:MINUS) on line 9 :
+-
+End of token 67 
+
+68-th token(type:COLON) on line 9 :
+:
+End of token 68 
+
+69-th token(type:ARRAY) on line 9 :
+array
+End of token 69 
+
+70-th token(type:LEFT SQUARE BRACKET) on line 9 :
+[
+End of token 70 
+
+71-th token(type:NUM) on line 9 :
+1
+End of token 71 
+
+72-th token(type:LDOTS) on line 9 :
+..
+End of token 72 
+
+73-th token(type:NUM) on line 9 :
+10
+End of token 73 
+
+74-th token(type:RIGTH SQUARE BRACKET) on line 9 :
+]
+End of token 74 
+
+75-th token(type:OF) on line 9 :
+of
+End of token 75 
+
+76-th token(type:REAL) on line 9 :
+real
+End of token 76 
+
+77-th token(type:SEMICOLON) on line 9 :
+;
+End of token 77 
+
+78-th token(type:VAR) on line 11 :
+var
+End of token 78 
+
+79-th token(type:IDENTIFIER) on line 11 :
+kki
+End of token 79 
+
+80-th token(type:COMMA) on line 11 :
+,
+End of token 80 
+
+81-th token(type:IDENTIFIER) on line 11 :
+iii
+End of token 81 
+
+82-th token(type:COLON) on line 11 :
+:
+End of token 82 
+
+83-th token(type:ARRAY) on line 11 :
+array
+End of token 83 
+
+84-th token(type:LEFT SQUARE BRACKET) on line 11 :
+[
+End of token 84 
+
+85-th token(type:NUM) on line 11 :
+23
+End of token 85 
+
+86-th token(type:LDOTS) on line 11 :
+..
+End of token 86 
+
+87-th token(type:NUM) on line 11 :
+57
+End of token 87 
+
+88-th token(type:RIGTH SQUARE BRACKET) on line 11 :
+]
+End of token 88 
+
+89-th token(type:OF) on line 11 :
+of
+End of token 89 
+
+90-th token(type:ARRAY) on line 11 :
+array
+End of token 90 
+
+91-th token(type:LEFT SQUARE BRACKET) on line 11 :
+[
+End of token 91 
+
+92-th token(type:NUM) on line 11 :
+23
+End of token 92 
+
+93-th token(type:LDOTS) on line 11 :
+..
+End of token 93 
+
+94-th token(type:NUM) on line 11 :
+57
+End of token 94 
+
+95-th token(type:RIGTH SQUARE BRACKET) on line 11 :
+]
+End of token 95 
+
+96-th token(type:OF) on line 11 :
+of
+End of token 96 
+
+97-th token(type:INTEGER) on line 11 :
+integer
+End of token 97 
+
+98-th token(type:SEMICOLON) on line 11 :
+;
+End of token 98 
+
+99-th token(type:VAR) on line 12 :
+var
+End of token 99 
+
+100-th token(type:IDENTIFIER) on line 12 :
+kkr
+End of token 100 
+
+101-th token(type:COMMA) on line 12 :
+,
+End of token 101 
+
+102-th token(type:IDENTIFIER) on line 12 :
+iir
+End of token 102 
+
+103-th token(type:COLON) on line 12 :
+:
+End of token 103 
+
+104-th token(type:ARRAY) on line 12 :
+array
+End of token 104 
+
+105-th token(type:LEFT SQUARE BRACKET) on line 12 :
+[
+End of token 105 
+
+106-th token(type:NUM) on line 12 :
+23
+End of token 106 
+
+107-th token(type:LDOTS) on line 12 :
+..
+End of token 107 
+
+108-th token(type:NUM) on line 12 :
+57
+End of token 108 
+
+109-th token(type:RIGTH SQUARE BRACKET) on line 12 :
+]
+End of token 109 
+
+110-th token(type:OF) on line 12 :
+of
+End of token 110 
+
+111-th token(type:ARRAY) on line 12 :
+array
+End of token 111 
+
+112-th token(type:LEFT SQUARE BRACKET) on line 12 :
+[
+End of token 112 
+
+113-th token(type:NUM) on line 12 :
+23
+End of token 113 
+
+114-th token(type:LDOTS) on line 12 :
+..
+End of token 114 
+
+115-th token(type:NUM) on line 12 :
+57
+End of token 115 
+
+116-th token(type:RIGTH SQUARE BRACKET) on line 12 :
+]
+End of token 116 
+
+117-th token(type:OF) on line 12 :
+of
+End of token 117 
+
+118-th token(type:REAL) on line 12 :
+real
+End of token 118 
+
+119-th token(type:SEMICOLON) on line 12 :
+;
+End of token 119 
+
+120-th token(type:VAR) on line 14 :
+var
+End of token 120 
+
+121-th token(type:IDENTIFIER) on line 14 :
+aVeryLongIdentifierGASDFDFGHJERYUKDVBNFBNDFGHwertyuioplkjhgfdsazxcvbnm
+End of token 121 
+
+122-th token(type:COLON) on line 14 :
+:
+End of token 122 
+
+123-th token(type:INTEGER) on line 14 :
+integer
+End of token 123 
+
+124-th token(type:SEMICOLON) on line 14 :
+;
+End of token 124 
+
+125-th token(type:VAR) on line 15 :
+var
+End of token 125 
+
+126-th token(type:IDENTIFIER) on line 15 :
+a_wrong_identifier_aadgnm
+End of token 126 
+
+127-th token(type:COLON) on line 15 :
+:
+End of token 127 
+
+128-th token(type:INTEGER) on line 15 :
+integer
+End of token 128 
+
+129-th token(type:SEMICOLON) on line 15 :
+;
+End of token 129 
+
+130-th token(type:COMMENT) on line 17 :
+//this is a very long comment and includes letter and symbol qwertyui~@%hopasdfghjkl;.,mnbvcxz`1234567890p;mdsf4577846799tj,vsffdfger~!@#$%^&*()POIUYEP{{}_+|_{"?><MZXCVB
+End of token 130 
+
+131-th token(type:BEGIN) on line 19 :
+begin
+End of token 131 
+
+132-th token(type:IDENTIFIER) on line 20 :
+a
+End of token 132 
+
+133-th token(type:ASSIGNOP) on line 20 :
+:=
+End of token 133 
+
+134-th token(type:NUM) on line 20 :
+1
+End of token 134 
+
+135-th token(type:SEMICOLON) on line 20 :
+;
+End of token 135 
+
+136-th token(type:IDENTIFIER) on line 21 :
+bb
+End of token 136 
+
+137-th token(type:ASSIGNOP) on line 21 :
+:=
+End of token 137 
+
+138-th token(type:NUM) on line 21 :
+354
+End of token 138 
+
+139-th token(type:NUM) on line 21 :
++126
+End of token 139 
+
+140-th token(type:MULTIPLICATION) on line 21 :
+*
+End of token 140 
+
+141-th token(type:LEFT PARENTHESIS) on line 21 :
+(
+End of token 141 
+
+142-th token(type:NUM) on line 21 :
+920
+End of token 142 
+
+143-th token(type:NUM) on line 21 :
+-27
+End of token 143 
+
+144-th token(type:DIVISION) on line 21 :
+/
+End of token 144 
+
+145-th token(type:NUM) on line 21 :
+190
+End of token 145 
+
+146-th token(type:RIGHT PARENTHESIS) on line 21 :
+)
+End of token 146 
+
+147-th token(type:SEMICOLON) on line 21 :
+;
+End of token 147 
+
+148-th token(type:IDENTIFIER) on line 22 :
+cc
+End of token 148 
+
+149-th token(type:ASSIGNOP) on line 22 :
+:=
+End of token 149 
+
+150-th token(type:NUM) on line 22 :
+10
+End of token 150 
+
+151-th token(type:LDOTS) on line 22 :
+..
+End of token 151 
+
+152-th token(type:NUM) on line 22 :
+20
+End of token 152 
+
+153-th token(type:SEMICOLON) on line 22 :
+;
+End of token 153 
+
+154-th token(type:IDENTIFIER) on line 23 :
+gg
+End of token 154 
+
+155-th token(type:ASSIGNOP) on line 23 :
+:=
+End of token 155 
+
+156-th token(type:NUM) on line 23 :
+10.3E+5
+End of token 156 
+
+157-th token(type:SEMICOLON) on line 23 :
+;
+End of token 157 
+
+158-th token(type:IDENTIFIER) on line 24 :
+hh
+End of token 158 
+
+159-th token(type:ASSIGNOP) on line 24 :
+:=
+End of token 159 
+
+160-th token(type:NUM) on line 24 :
+10.3
+End of token 160 
+
+161-th token(type:IDENTIFIER) on line 24 :
+E
+End of token 161 
+
+162-th token(type:PLUS) on line 24 :
++
+End of token 162 
+
+163-th token(type:IDENTIFIER) on line 24 :
+BC
+End of token 163 
+
+164-th token(type:SEMICOLON) on line 24 :
+;
+End of token 164 
+
+165-th token(type:IDENTIFIER) on line 25 :
+mm
+End of token 165 
+
+166-th token(type:ASSIGNOP) on line 25 :
+:=
+End of token 166 
+
+167-th token(type:NUM) on line 25 :
+10.3E+2
+End of token 167 
+
+168-th token(type:PERIOD) on line 25 :
+.
+End of token 168 
+
+169-th token(type:NUM) on line 25 :
+34
+End of token 169 
+
+170-th token(type:SEMICOLON) on line 25 :
+;
+End of token 170 
+
+171-th token(type:IDENTIFIER) on line 26 :
+pp
+End of token 171 
+
+172-th token(type:ASSIGNOP) on line 26 :
+:=
+End of token 172 
+
+173-th token(type:NUM) on line 26 :
+10.3
+End of token 173 
+
+174-th token(type:IDENTIFIER) on line 26 :
+EBC
+End of token 174 
+
+175-th token(type:SEMICOLON) on line 26 :
+;
+End of token 175 
+
+176-th token(type:IDENTIFIER) on line 27 :
+rr
+End of token 176 
+
+177-th token(type:ASSIGNOP) on line 27 :
+:=
+End of token 177 
+
+178-th token(type:NUM) on line 27 :
+10.3E+5
+End of token 178 
+
+179-th token(type:NUM) on line 27 :
++123
+End of token 179 
+
+180-th token(type:SEMICOLON) on line 27 :
+;
+End of token 180 
+
+181-th token(type:IDENTIFIER) on line 28 :
+str
+End of token 181 
+
+182-th token(type:ASSIGNOP) on line 28 :
+:=
+End of token 182 
+
+183-th token(type:IDENTIFIER) on line 28 :
+This
+End of token 183 
+
+184-th token(type:IDENTIFIER) on line 28 :
+is
+End of token 184 
+
+185-th token(type:IDENTIFIER) on line 28 :
+a
+End of token 185 
+
+186-th token(type:IDENTIFIER) on line 28 :
+srting
+End of token 186 
+
+187-th token(type:SEMICOLON) on line 28 :
+;
+End of token 187 
+
+188-th token(type:IDENTIFIER) on line 29 :
+str2
+End of token 188 
+
+189-th token(type:ASSIGNOP) on line 29 :
+:=
+End of token 189 
+
+190-th token(type:STRING) on line 29 :
+"  This is a srting,too!!  "
+End of token 190 
+
+191-th token(type:SEMICOLON) on line 29 :
+;
+End of token 191 
+
+192-th token(type:IDENTIFIER) on line 30 :
+str3
+End of token 192 
+
+193-th token(type:ASSIGNOP) on line 30 :
+:=
+End of token 193 
+
+194-th token(type:STRING) on line 30 :
+""
+End of token 194 
+
+195-th token(type:SEMICOLON) on line 30 :
+;
+End of token 195 
+
+196-th token(type:IDENTIFIER) on line 31 :
+str4
+End of token 196 
+
+197-th token(type:ASSIGNOP) on line 31 :
+:=
+End of token 197 
+
+198-th token(type:STRING) on line 31 :
+"adc"
+End of token 198 
+
+199-th token(type:STRING) on line 31 :
+"def"
+End of token 199 
+
+200-th token(type:SEMICOLON) on line 31 :
+;
+End of token 200 
+
+201-th token(type:IDENTIFIER) on line 32 :
+str4
+End of token 201 
+
+202-th token(type:ASSIGNOP) on line 32 :
+:=
+End of token 202 
+
+203-th token(type:IDENTIFIER) on line 32 :
+line
+End of token 203 
+
+204-th token(type:IDENTIFIER) on line 33 :
+string
+End of token 204 
+
+205-th token(type:IDENTIFIER) on line 33 :
+incorrect_symbols
+End of token 205 
+
+206-th token(type:ASSIGNOP) on line 34 :
+:=
+End of token 206 
+
+207-th token(type:MULTIPLICATION) on line 34 :
+*
+End of token 207 
+
+208-th token(type:LEFT PARENTHESIS) on line 34 :
+(
+End of token 208 
+
+209-th token(type:RIGHT PARENTHESIS) on line 34 :
+)
+End of token 209 
+
+210-th token(type:PLUS) on line 34 :
++
+End of token 210 
+
+211-th token(type:MINUS) on line 34 :
+-
+End of token 211 
+
+212-th token(type:EQUALS TO) on line 34 :
+=
+End of token 212 
+
+213-th token(type:COMMA) on line 34 :
+,
+End of token 213 
+
+214-th token(type:PERIOD) on line 34 :
+.
+End of token 214 
+
+215-th token(type:DIVISION) on line 34 :
+/
+End of token 215 
+
+216-th token(type:SEMICOLON) on line 34 :
+;
+End of token 216 
+
+217-th token(type:LEFT SQUARE BRACKET) on line 34 :
+[
+End of token 217 
+
+218-th token(type:RIGTH SQUARE BRACKET) on line 34 :
+]
+End of token 218 
+
+219-th token(type:LESS THAN) on line 34 :
+<
+End of token 219 
+
+220-th token(type:GREATER THAN) on line 34 :
+>
+End of token 220 
+
+221-th token(type:COLON) on line 34 :
+:
+End of token 221 
+
+222-th token(type:END) on line 35 :
+end
+End of token 222 
+
+223-th token(type:PERIOD) on line 35 :
+.
+End of token 223 
+
+224-th token(type:COMMENT) on line 35 :
+// this is the end of the program
+End of token 224 
+End of File reached. Exiting...

@@ -1,0 +1,642 @@
+miniPascal.y:267.18-20: warning: type clash on default action: <node> != <> [-Wother]
+  267 | optional_var   : VAR
+      |                  ^~~
+miniPascal.y:268.10: warning: empty rule for typed nonterminal, and no action [-Wother]
+  268 |         | /* lambda */
+      |          ^
+lexSource.l:190:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  190 |     return 1;
+      | ^   ~~
+In file included from miniPascal.y:7:
+./include/symboltable.h:78:5: error: unknown type name ‘SymbolTableEntry’
+   78 |     SymbolTableEntry* HashTable[HASH_TABLE_SIZE];//CLEANUP
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:83:5: error: unknown type name ‘SymbolTableEntry’
+   83 |     SymbolTableEntry** scopeDisplay;
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:87:5: error: unknown type name ‘SymbolTableEntry’
+   87 |     SymbolTableEntry* scopeMethodStackTop;
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:92:5: error: unknown type name ‘SymbolTableEntry’
+   92 |     SymbolTableEntry** safeKeeping;//For printing at the end
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:98:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   98 | SymbolTableEntry* createNewSymbleTableEntry(Attributes * attr);//Simply initializes while below adds to hash table
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:99:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   99 | SymbolTableEntry* addSymbol(SymbolTable*,char * str,Attributes * attr);//Will return NULL when we have a collision in same scope
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:100:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  100 | SymbolTableEntry* retrieveSymbol(SymbolTable*,char * name);
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:104:53: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  104 | void addToHashChain(SymbolTable*,unsigned long hash,SymbolTableEntry * entry);
+      |                                                     ^~~~~~~~~~~~~~~~
+      |                                                     SymbolTable
+./include/symboltable.h:105:22: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  105 | void freeSymTabEntry(SymbolTableEntry* symEntry);
+      |                      ^~~~~~~~~~~~~~~~
+      |                      SymbolTable
+./include/symboltable.h:109:42: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  109 | void openScope(SymbolTable * symbolTable,SymbolTableEntry * entryForEnteredMethod);
+      |                                          ^~~~~~~~~~~~~~~~
+      |                                          SymbolTable
+./include/symboltable.h:110:31: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  110 | void closeScope(SymbolTable *,SymbolTableEntry * entryForClosingMethod,Node* assocNode,size_t tabIndex);
+      |                               ^~~~~~~~~~~~~~~~
+      |                               SymbolTable
+./include/symboltable.h:113:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  113 | SymbolTableEntry *  getEntryDeclaredLocally(SymbolTable*,char * name);//Wil return NULL scope does not have the name locally
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:114:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  114 | SymbolTableEntry * findInnerMostEntry(char * name);//This will always take O(taleSize)
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+y.tab.c: In function ‘yyparse’:
+y.tab.c:1439:16: warning: implicit declaration of function ‘yylex’ [-Wimplicit-function-declaration]
+ 1439 |       yychar = yylex ();
+      |                ^~~~~
+In file included from ./include/codegen.h:5,
+                 from codegen.c:1:
+./include/symboltable.h:78:5: error: unknown type name ‘SymbolTableEntry’
+   78 |     SymbolTableEntry* HashTable[HASH_TABLE_SIZE];//CLEANUP
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:83:5: error: unknown type name ‘SymbolTableEntry’
+   83 |     SymbolTableEntry** scopeDisplay;
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:87:5: error: unknown type name ‘SymbolTableEntry’
+   87 |     SymbolTableEntry* scopeMethodStackTop;
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:92:5: error: unknown type name ‘SymbolTableEntry’
+   92 |     SymbolTableEntry** safeKeeping;//For printing at the end
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:98:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   98 | SymbolTableEntry* createNewSymbleTableEntry(Attributes * attr);//Simply initializes while below adds to hash table
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:99:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   99 | SymbolTableEntry* addSymbol(SymbolTable*,char * str,Attributes * attr);//Will return NULL when we have a collision in same scope
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:100:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  100 | SymbolTableEntry* retrieveSymbol(SymbolTable*,char * name);
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:104:53: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  104 | void addToHashChain(SymbolTable*,unsigned long hash,SymbolTableEntry * entry);
+      |                                                     ^~~~~~~~~~~~~~~~
+      |                                                     SymbolTable
+./include/symboltable.h:105:22: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  105 | void freeSymTabEntry(SymbolTableEntry* symEntry);
+      |                      ^~~~~~~~~~~~~~~~
+      |                      SymbolTable
+./include/symboltable.h:109:42: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  109 | void openScope(SymbolTable * symbolTable,SymbolTableEntry * entryForEnteredMethod);
+      |                                          ^~~~~~~~~~~~~~~~
+      |                                          SymbolTable
+./include/symboltable.h:110:31: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  110 | void closeScope(SymbolTable *,SymbolTableEntry * entryForClosingMethod,Node* assocNode,size_t tabIndex);
+      |                               ^~~~~~~~~~~~~~~~
+      |                               SymbolTable
+./include/symboltable.h:113:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  113 | SymbolTableEntry *  getEntryDeclaredLocally(SymbolTable*,char * name);//Wil return NULL scope does not have the name locally
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:114:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  114 | SymbolTableEntry * findInnerMostEntry(char * name);//This will always take O(taleSize)
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+In file included from symboltable.c:3:
+./include/symboltable.h:78:5: error: unknown type name ‘SymbolTableEntry’
+   78 |     SymbolTableEntry* HashTable[HASH_TABLE_SIZE];//CLEANUP
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:83:5: error: unknown type name ‘SymbolTableEntry’
+   83 |     SymbolTableEntry** scopeDisplay;
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:87:5: error: unknown type name ‘SymbolTableEntry’
+   87 |     SymbolTableEntry* scopeMethodStackTop;
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:92:5: error: unknown type name ‘SymbolTableEntry’
+   92 |     SymbolTableEntry** safeKeeping;//For printing at the end
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:98:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   98 | SymbolTableEntry* createNewSymbleTableEntry(Attributes * attr);//Simply initializes while below adds to hash table
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:99:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   99 | SymbolTableEntry* addSymbol(SymbolTable*,char * str,Attributes * attr);//Will return NULL when we have a collision in same scope
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:100:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  100 | SymbolTableEntry* retrieveSymbol(SymbolTable*,char * name);
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:104:53: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  104 | void addToHashChain(SymbolTable*,unsigned long hash,SymbolTableEntry * entry);
+      |                                                     ^~~~~~~~~~~~~~~~
+      |                                                     SymbolTable
+./include/symboltable.h:105:22: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  105 | void freeSymTabEntry(SymbolTableEntry* symEntry);
+      |                      ^~~~~~~~~~~~~~~~
+      |                      SymbolTable
+./include/symboltable.h:109:42: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  109 | void openScope(SymbolTable * symbolTable,SymbolTableEntry * entryForEnteredMethod);
+      |                                          ^~~~~~~~~~~~~~~~
+      |                                          SymbolTable
+./include/symboltable.h:110:31: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  110 | void closeScope(SymbolTable *,SymbolTableEntry * entryForClosingMethod,Node* assocNode,size_t tabIndex);
+      |                               ^~~~~~~~~~~~~~~~
+      |                               SymbolTable
+./include/symboltable.h:113:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  113 | SymbolTableEntry *  getEntryDeclaredLocally(SymbolTable*,char * name);//Wil return NULL scope does not have the name locally
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:114:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  114 | SymbolTableEntry * findInnerMostEntry(char * name);//This will always take O(taleSize)
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+symboltable.c: In function ‘initializeSymbolTable’:
+symboltable.c:16:34: error: ‘SymbolTableEntry’ undeclared (first use in this function)
+   16 |     symbolTable->scopeDisplay = (SymbolTableEntry**)malloc(sizeof(SymbolTableEntry*)*HASH_TABLE_SIZE);
+      |                                  ^~~~~~~~~~~~~~~~
+symboltable.c:16:34: note: each undeclared identifier is reported only once for each function it appears in
+symboltable.c:16:52: error: expected expression before ‘)’ token
+   16 |     symbolTable->scopeDisplay = (SymbolTableEntry**)malloc(sizeof(SymbolTableEntry*)*HASH_TABLE_SIZE);
+      |                                                    ^
+symboltable.c:17:51: error: expected expression before ‘)’ token
+   17 |     symbolTable->safeKeeping = (SymbolTableEntry**)malloc(sizeof(SymbolTableEntry*)*HASH_TABLE_SIZE);
+      |                                                   ^
+symboltable.c: At top level:
+symboltable.c:28:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   28 | SymbolTableEntry* createNewSymbleTableEntry(Attributes * attr){
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+symboltable.c: In function ‘createNewSymbleTableEntry’:
+symboltable.c:29:9: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   29 |         SymbolTableEntry* entry = (SymbolTableEntry*) malloc(sizeof(SymbolTableEntry));//TODO CLEANUP
+      |         ^~~~~~~~~~~~~~~~
+      |         struct 
+symboltable.c:29:36: error: ‘SymbolTableEntry’ undeclared (first use in this function)
+   29 |         SymbolTableEntry* entry = (SymbolTableEntry*) malloc(sizeof(SymbolTableEntry));//TODO CLEANUP
+      |                                    ^~~~~~~~~~~~~~~~
+symboltable.c:29:53: error: expected expression before ‘)’ token
+   29 |         SymbolTableEntry* entry = (SymbolTableEntry*) malloc(sizeof(SymbolTableEntry));//TODO CLEANUP
+      |                                                     ^
+symboltable.c:31:14: error: request for member ‘nextHash’ in something not a structure or union
+   31 |         entry->nextHash = NULL;
+      |              ^~
+symboltable.c:32:14: error: request for member ‘prevHash’ in something not a structure or union
+   32 |         entry->prevHash = NULL;
+      |              ^~
+symboltable.c:33:14: error: request for member ‘var’ in something not a structure or union
+   33 |         entry->var = NULL;
+      |              ^~
+symboltable.c:34:14: error: request for member ‘nextInSameScope’ in something not a structure or union
+   34 |         entry->nextInSameScope = NULL;
+      |              ^~
+symboltable.c:35:14: error: request for member ‘prevInSameScope’ in something not a structure or union
+   35 |         entry->prevInSameScope = NULL;
+      |              ^~
+symboltable.c:36:14: error: request for member ‘attributes’ in something not a structure or union
+   36 |         entry->attributes = attr;//REMEMBER this must be initialized outside
+      |              ^~
+symboltable.c:37:14: error: request for member ‘name’ in something not a structure or union
+   37 |         entry->name = NULL;
+      |              ^~
+symboltable.c:38:14: error: request for member ‘entryDepth’ in something not a structure or union
+   38 |         entry->entryDepth = 0;
+      |              ^~
+symboltable.c:40:14: error: request for member ‘nextInScopeStack’ in something not a structure or union
+   40 |         entry->nextInScopeStack=NULL;
+      |              ^~
+symboltable.c: At top level:
+symboltable.c:43:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   43 | SymbolTableEntry * retrieveSymbol(SymbolTable* symbolTable,char * name){//Hash table will contain the innermost declaration of the name. I belive this is why we will be removing it later
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+symboltable.c: In function ‘retrieveSymbol’:
+symboltable.c:45:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   45 |     SymbolTableEntry * curIt = symbolTable->HashTable[hash];
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+symboltable.c:48:32: error: request for member ‘name’ in something not a structure or union
+   48 |         if(cmpInsensitive(curIt->name, name) == true)//If we find our name in the collision chain
+      |                                ^~
+symboltable.c:51:22: error: request for member ‘nextHash’ in something not a structure or union
+   51 |         curIt = curIt->nextHash;
+      |                      ^~
+symboltable.c: In function ‘removeFromHashChain’:
+symboltable.c:56:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   56 |     SymbolTableEntry * oldSym = retrieveSymbol(symbolTable,name);
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+symboltable.c:57:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   57 |     SymbolTableEntry ** head =  &symbolTable->HashTable[hashFunc((unsigned char*)name)];
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+symboltable.c:68:23: error: request for member ‘nextHash’ in something not a structure or union
+   68 |         *head = oldSym->nextHash;
+      |                       ^~
+symboltable.c:71:14: error: request for member ‘nextHash’ in something not a structure or union
+   71 |     if(oldSym->nextHash != NULL)
+      |              ^~
+symboltable.c:72:15: error: request for member ‘nextHash’ in something not a structure or union
+   72 |         oldSym->nextHash->prevHash = oldSym->prevHash;
+      |               ^~
+symboltable.c:72:44: error: request for member ‘prevHash’ in something not a structure or union
+   72 |         oldSym->nextHash->prevHash = oldSym->prevHash;
+      |                                            ^~
+symboltable.c:73:14: error: request for member ‘prevHash’ in something not a structure or union
+   73 |     if(oldSym->prevHash != NULL)
+      |              ^~
+symboltable.c:74:15: error: request for member ‘prevHash’ in something not a structure or union
+   74 |         oldSym->prevHash->nextHash = oldSym->nextHash;
+      |               ^~
+symboltable.c:74:44: error: request for member ‘nextHash’ in something not a structure or union
+   74 |         oldSym->prevHash->nextHash = oldSym->nextHash;
+      |                                            ^~
+symboltable.c: At top level:
+symboltable.c:76:66: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+   76 | void addToHashChain(SymbolTable* symbolTable,unsigned long hash, SymbolTableEntry * newEntry){//By the time we run this we know that there is no entry in the collision chain for the same name because we mustve removed it previously
+      |                                                                  ^~~~~~~~~~~~~~~~
+      |                                                                  SymbolTable
+symboltable.c:89:22: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+   89 | void freeSymTabEntry(SymbolTableEntry * entry){
+      |                      ^~~~~~~~~~~~~~~~
+      |                      SymbolTable
+symboltable.c:128:42: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  128 | void openScope(SymbolTable* symbolTable, SymbolTableEntry* entryForEnteredMethod){
+      |                                          ^~~~~~~~~~~~~~~~
+      |                                          SymbolTable
+symboltable.c:142:43: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  142 | void closeScope(SymbolTable* symbolTable, SymbolTableEntry* entryForClosedMethod,Node* assocNode, size_t tabIndex){//Since opening and closing of scopes is done only on methods
+      |                                           ^~~~~~~~~~~~~~~~
+      |                                           SymbolTable
+symboltable.c:176:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  176 | SymbolTableEntry* addSymbol(SymbolTable * symbolTable, char * name, Attributes* attr){//SUPER TODO think about actually copying the str value here instead of pointing to the value in the AST. Because if for some reason you delete teh AST before thsi you are in for hell bruv
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+symboltable.c: In function ‘addSymbol’:
+symboltable.c:179:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  179 |     SymbolTableEntry* oldNameEntry = retrieveSymbol(symbolTable,name);
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+symboltable.c:180:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  180 |     SymbolTableEntry* newEntry = createNewSymbleTableEntry(attr);
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+symboltable.c:181:44: error: request for member ‘entryDepth’ in something not a structure or union
+  181 |     if(oldNameEntry != NULL && oldNameEntry->entryDepth == depth){//Then there are no
+      |                                            ^~
+symboltable.c:184:9: warning: implicit declaration of function ‘freeSymTabEntry’ [-Wimplicit-function-declaration]
+  184 |         freeSymTabEntry(newEntry);//Let the caller handle the error message
+      |         ^~~~~~~~~~~~~~~
+symboltable.c:188:13: error: request for member ‘nextInSameScope’ in something not a structure or union
+  188 |     newEntry->nextInSameScope = symbolTable->scopeDisplay[depth];
+      |             ^~
+symboltable.c:189:13: error: request for member ‘entryDepth’ in something not a structure or union
+  189 |     newEntry->entryDepth= depth;
+      |             ^~
+symboltable.c:190:13: error: request for member ‘name’ in something not a structure or union
+  190 |     newEntry->name = name;//add name
+      |             ^~
+symboltable.c:193:41: error: request for member ‘prevInSameScope’ in something not a structure or union
+  193 |         symbolTable->scopeDisplay[depth]->prevInSameScope = newEntry;
+      |                                         ^~
+symboltable.c:204:53: error: request for member ‘name’ in something not a structure or union
+  204 |         removeFromHashChain(symbolTable,oldNameEntry->name);
+      |                                                     ^~
+symboltable.c:208:5: warning: implicit declaration of function ‘addToHashChain’ [-Wimplicit-function-declaration]
+  208 |     addToHashChain(symbolTable,hash, newEntry);
+      |     ^~~~~~~~~~~~~~
+symboltable.c:210:13: error: request for member ‘var’ in something not a structure or union
+  210 |     newEntry->var = oldNameEntry;//This will be null if pointing outside
+      |             ^~
+symboltable.c: At top level:
+symboltable.c:234:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  234 | SymbolTableEntry* getEntryDeclaredLocally(SymbolTable* symbolTable,char * name){
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+symboltable.c: In function ‘getEntryDeclaredLocally’:
+symboltable.c:236:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  236 |     SymbolTableEntry * scopeIt =  symbolTable->scopeDisplay[symbolTable->curDepth];
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+symboltable.c:238:34: error: request for member ‘name’ in something not a structure or union
+  238 |         if(cmpInsensitive(scopeIt->name,name) == true)
+      |                                  ^~
+symboltable.c:240:25: error: request for member ‘nextInSameScope’ in something not a structure or union
+  240 |        scopeIt = scopeIt->nextInSameScope;
+      |                         ^~
+symboltable.c:241:19: error: request for member ‘nextInSameScope’ in something not a structure or union
+  241 |     }while(scopeIt->nextInSameScope != NULL);
+      |                   ^~
+symboltable.c: In function ‘printSymbolTableInClosedScope’:
+symboltable.c:251:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  251 |     SymbolTableEntry* symbolIt = symbolTable->scopeDisplay[symbolTable->curDepth];//Yeah i know its not last rn but it is in the enxt operation
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+symboltable.c:252:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  252 |     SymbolTableEntry* prevIt;
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+symboltable.c:256:23: error: request for member ‘nextInSameScope’ in something not a structure or union
+  256 |         while(symbolIt->nextInSameScope!=NULL)symbolIt = symbolIt->nextInSameScope;
+      |                       ^~
+symboltable.c:256:66: error: request for member ‘nextInSameScope’ in something not a structure or union
+  256 |         while(symbolIt->nextInSameScope!=NULL)symbolIt = symbolIt->nextInSameScope;
+      |                                                                  ^~
+symboltable.c:258:30: error: request for member ‘prevInSameScope’ in something not a structure or union
+  258 |             prevIt = symbolIt->prevInSameScope;
+      |                              ^~
+symboltable.c:260:29: error: request for member ‘name’ in something not a structure or union
+  260 |                     symbolIt->name,
+      |                             ^~
+symboltable.c:261:41: error: request for member ‘attributes’ in something not a structure or union
+  261 |                     NameTypeStr[symbolIt->attributes->nameType],
+      |                                         ^~
+symboltable.c:262:42: error: request for member ‘attributes’ in something not a structure or union
+  262 |                     NameClassStr[symbolIt->attributes->nameClass],
+      |                                          ^~
+symboltable.c:264:29: error: request for member ‘attributes’ in something not a structure or union
+  264 |                     symbolIt->attributes->arrDimension
+      |                             ^~
+symboltable.c:267:24: error: request for member ‘attributes’ in something not a structure or union
+  267 |             if(symbolIt->attributes->arrDimension>0){
+      |                        ^~
+symboltable.c:269:41: error: request for member ‘attributes’ in something not a structure or union
+  269 |                 for(int i = 0;i<symbolIt->attributes->arrDimension*2;i=i+2){
+      |                                         ^~
+symboltable.c:270:47: error: request for member ‘attributes’ in something not a structure or union
+  270 |                     printf("(%d,%d),",symbolIt->attributes->boundsArray[i],symbolIt->attributes->boundsArray[i+1]);
+      |                                               ^~
+symboltable.c:270:84: error: request for member ‘attributes’ in something not a structure or union
+  270 |                     printf("(%d,%d),",symbolIt->attributes->boundsArray[i],symbolIt->attributes->boundsArray[i+1]);
+      |                                                                                    ^~
+symboltable.c:273:24: error: request for member ‘attributes’ in something not a structure or union
+  273 |             if(symbolIt->attributes->methodSignature!=NULL){
+      |                        ^~
+symboltable.c:275:55: error: request for member ‘attributes’ in something not a structure or union
+  275 |                 MethodParameter * methParam = symbolIt->attributes->methodSignature->paramArrayHead;
+      |                                                       ^~
+symboltable.c: In function ‘terminateSymbolTable’:
+symboltable.c:300:9: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  300 |         SymbolTableEntry* symbolIt = symbolTable->safeKeeping[i];//Yeah i know its not last rn but it is in the enxt operation
+      |         ^~~~~~~~~~~~~~~~
+      |         struct 
+symboltable.c:301:9: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  301 |         SymbolTableEntry* prevIt;
+      |         ^~~~~~~~~~~~~~~~
+      |         struct 
+symboltable.c:306:34: error: request for member ‘prevInSameScope’ in something not a structure or union
+  306 |                 prevIt = symbolIt->prevInSameScope;
+      |                                  ^~
+symboltable.c:308:33: error: request for member ‘name’ in something not a structure or union
+  308 |                         symbolIt->name,
+      |                                 ^~
+symboltable.c:309:45: error: request for member ‘attributes’ in something not a structure or union
+  309 |                         NameTypeStr[symbolIt->attributes->nameType],
+      |                                             ^~
+symboltable.c:310:46: error: request for member ‘attributes’ in something not a structure or union
+  310 |                         NameClassStr[symbolIt->attributes->nameClass],
+      |                                              ^~
+symboltable.c:311:33: error: request for member ‘entryDepth’ in something not a structure or union
+  311 |                         symbolIt->entryDepth,
+      |                                 ^~
+symboltable.c:312:34: error: request for member ‘attributes’ in something not a structure or union
+  312 |                         (symbolIt->attributes->arrDimension > 0)?"YES":"NO"
+      |                                  ^~
+symboltable.c:315:28: error: request for member ‘attributes’ in something not a structure or union
+  315 |                 if(symbolIt->attributes->arrDimension>0){
+      |                            ^~
+symboltable.c:317:45: error: request for member ‘attributes’ in something not a structure or union
+  317 |                     for(int i = 0;i<symbolIt->attributes->arrDimension*2;i=i+2){
+      |                                             ^~
+symboltable.c:318:51: error: request for member ‘attributes’ in something not a structure or union
+  318 |                         printf("(%d,%d),",symbolIt->attributes->boundsArray[i],symbolIt->attributes->boundsArray[i+1]);
+      |                                                   ^~
+symboltable.c:318:88: error: request for member ‘attributes’ in something not a structure or union
+  318 |                         printf("(%d,%d),",symbolIt->attributes->boundsArray[i],symbolIt->attributes->boundsArray[i+1]);
+      |                                                                                        ^~
+symboltable.c:321:28: error: request for member ‘attributes’ in something not a structure or union
+  321 |                 if(symbolIt->attributes->methodSignature!=NULL){
+      |                            ^~
+symboltable.c:323:59: error: request for member ‘attributes’ in something not a structure or union
+  323 |                     MethodParameter * methParam = symbolIt->attributes->methodSignature->paramArrayHead;
+      |                                                           ^~
+In file included from semantics.c:4:
+./include/symboltable.h:78:5: error: unknown type name ‘SymbolTableEntry’
+   78 |     SymbolTableEntry* HashTable[HASH_TABLE_SIZE];//CLEANUP
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:83:5: error: unknown type name ‘SymbolTableEntry’
+   83 |     SymbolTableEntry** scopeDisplay;
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:87:5: error: unknown type name ‘SymbolTableEntry’
+   87 |     SymbolTableEntry* scopeMethodStackTop;
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:92:5: error: unknown type name ‘SymbolTableEntry’
+   92 |     SymbolTableEntry** safeKeeping;//For printing at the end
+      |     ^~~~~~~~~~~~~~~~
+./include/symboltable.h:98:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   98 | SymbolTableEntry* createNewSymbleTableEntry(Attributes * attr);//Simply initializes while below adds to hash table
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:99:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+   99 | SymbolTableEntry* addSymbol(SymbolTable*,char * str,Attributes * attr);//Will return NULL when we have a collision in same scope
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:100:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  100 | SymbolTableEntry* retrieveSymbol(SymbolTable*,char * name);
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:104:53: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  104 | void addToHashChain(SymbolTable*,unsigned long hash,SymbolTableEntry * entry);
+      |                                                     ^~~~~~~~~~~~~~~~
+      |                                                     SymbolTable
+./include/symboltable.h:105:22: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  105 | void freeSymTabEntry(SymbolTableEntry* symEntry);
+      |                      ^~~~~~~~~~~~~~~~
+      |                      SymbolTable
+./include/symboltable.h:109:42: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  109 | void openScope(SymbolTable * symbolTable,SymbolTableEntry * entryForEnteredMethod);
+      |                                          ^~~~~~~~~~~~~~~~
+      |                                          SymbolTable
+./include/symboltable.h:110:31: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  110 | void closeScope(SymbolTable *,SymbolTableEntry * entryForClosingMethod,Node* assocNode,size_t tabIndex);
+      |                               ^~~~~~~~~~~~~~~~
+      |                               SymbolTable
+./include/symboltable.h:113:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  113 | SymbolTableEntry *  getEntryDeclaredLocally(SymbolTable*,char * name);//Wil return NULL scope does not have the name locally
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+./include/symboltable.h:114:1: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  114 | SymbolTableEntry * findInnerMostEntry(char * name);//This will always take O(taleSize)
+      | ^~~~~~~~~~~~~~~~
+      | struct 
+semantics.c: In function ‘semanticCheck’:
+semantics.c:27:13: warning: implicit declaration of function ‘openScope’ [-Wimplicit-function-declaration]
+   27 |             openScope(symbolTable,NULL);//So you can put the arguments in this scope
+      |             ^~~~~~~~~
+semantics.c:36:13: warning: implicit declaration of function ‘closeScope’ [-Wimplicit-function-declaration]
+   36 |             closeScope(symbolTable,NULL,node,*tabIndex);
+      |             ^~~~~~~~~~
+semantics.c: In function ‘handleFunction’:
+semantics.c:177:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  177 |     SymbolTableEntry* funcentry = addSymbol(symbolTable,idNode->stringVal,attr);
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+semantics.c:210:22: error: request for member ‘attributes’ in something not a structure or union
+  210 |         if(!funcentry->attributes->hasBeenInitialized){
+      |                      ^~
+semantics.c:211:46: error: request for member ‘name’ in something not a structure or union
+  211 |             size_t msgsize = strlen(funcentry->name)+100;
+      |                                              ^~
+semantics.c:213:78: error: request for member ‘name’ in something not a structure or union
+  213 |             sprintf(msg,"The function \"%s\" has no return value\n",funcentry->name);
+      |                                                                              ^~
+semantics.c: In function ‘handleProcedure’:
+semantics.c:228:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  228 |     SymbolTableEntry* entry = addSymbol(symbolTable,idNode->stringVal,attr);
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+semantics.c: In function ‘handleVarDeclaration’:
+semantics.c:406:9: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  406 |         SymbolTableEntry* entry =addSymbol(symbolTable,singleId->stringVal,attr);
+      |         ^~~~~~~~~~~~~~~~
+      |         struct 
+semantics.c: At top level:
+semantics.c:436:27: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  436 | bool checkIfArrRefIllegal(SymbolTableEntry* entry, Node * varrefNode){
+      |                           ^~~~~~~~~~~~~~~~
+      |                           SymbolTable
+semantics.c: In function ‘handleLHSVarRef’:
+semantics.c:493:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  493 |     SymbolTableEntry* entry = retrieveSymbol(symbolTable,idNode->stringVal);
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+semantics.c:496:13: error: request for member ‘attributes’ in something not a structure or union
+  496 |     if(entry->attributes->nameClass == CLASS_FUNCTION){
+      |             ^~
+semantics.c:500:9: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  500 |         SymbolTableEntry* nestStackIterator = symbolTable->scopeMethodStackTop;//We begin at top of stack. i.e. innermost func
+      |         ^~~~~~~~~~~~~~~~
+      |         struct 
+semantics.c:502:66: error: request for member ‘name’ in something not a structure or union
+  502 |             if(cmpInsensitive(idNode->stringVal,nestStackIterator->name) == true){
+      |                                                                  ^~
+semantics.c:506:50: error: request for member ‘nextInScopeStack’ in something not a structure or union
+  506 |             nestStackIterator = nestStackIterator->nextInScopeStack;
+      |                                                  ^~
+semantics.c:515:19: error: request for member ‘attributes’ in something not a structure or union
+  515 |     }else if(entry->attributes->nameClass != CLASS_VAR){//If identifier on lhs is not a variable
+      |                   ^~
+semantics.c:518:38: error: request for member ‘name’ in something not a structure or union
+  518 |         size_t msgsize = strlen(entry->name)+100;
+      |                                      ^~
+semantics.c:520:70: error: request for member ‘name’ in something not a structure or union
+  520 |         sprintf(msg,"LHS identifier \"%s\" is NOT a variable\n",entry->name);
+      |                                                                      ^~
+semantics.c:523:17: error: request for member ‘attributes’ in something not a structure or union
+  523 |         if(entry->attributes->arrDimension > 0){
+      |                 ^~
+semantics.c:524:37: warning: implicit declaration of function ‘checkIfArrRefIllegal’ [-Wimplicit-function-declaration]
+  524 |             wasThereSemanticError = checkIfArrRefIllegal(entry,varrefNode);
+      |                                     ^~~~~~~~~~~~~~~~~~~~
+semantics.c:537:40: error: request for member ‘attributes’ in something not a structure or union
+  537 |         varrefNode->nodeStdType = entry->attributes->nameType;
+      |                                        ^~
+semantics.c: At top level:
+semantics.c:539:20: error: unknown type name ‘SymbolTableEntry’; did you mean ‘SymbolTable’?
+  539 | int checkArguments(SymbolTableEntry* methodEntry,Node * idNode,Node* exprNode){//If int = -1 then thre was an error. By method we mean either procedure or function
+      |                    ^~~~~~~~~~~~~~~~
+      |                    SymbolTable
+semantics.c: In function ‘handleRHSVarRef’:
+semantics.c:602:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  602 |     SymbolTableEntry* entry = retrieveSymbol(symbolTable,idNode->stringVal);
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+semantics.c:604:13: error: request for member ‘attributes’ in something not a structure or union
+  604 |     if(entry->attributes->nameClass == CLASS_FUNCTION){//This is when the function has no vars
+      |             ^~
+semantics.c:609:12: warning: implicit declaration of function ‘checkArguments’ [-Wimplicit-function-declaration]
+  609 |         if(checkArguments(entry,idNode,NULL)==-1){
+      |            ^~~~~~~~~~~~~~
+semantics.c:613:44: error: request for member ‘attributes’ in something not a structure or union
+  613 |             varrefNode->nodeStdType = entry->attributes->nameType;
+      |                                            ^~
+semantics.c:618:19: error: request for member ‘attributes’ in something not a structure or union
+  618 |     }else if(entry->attributes->nameClass == CLASS_VAR){//If this is indeed a var
+      |                   ^~
+semantics.c:623:17: error: request for member ‘attributes’ in something not a structure or union
+  623 |         if(entry->attributes->hasBeenInitialized){
+      |                 ^~
+semantics.c:624:21: error: request for member ‘attributes’ in something not a structure or union
+  624 |             if(entry->attributes->arrDimension > 0){//IF it is an aarray
+      |                     ^~
+semantics.c:635:25: error: request for member ‘attributes’ in something not a structure or union
+  635 |                 if(entry->attributes->hasConcreteValue){
+      |                         ^~
+semantics.c:636:29: error: request for member ‘attributes’ in something not a structure or union
+  636 |                     if(entry->attributes->nameType == TYPE_INT || entry->attributes->nameType == TYPE_REAL){
+      |                             ^~
+semantics.c:636:72: error: request for member ‘attributes’ in something not a structure or union
+  636 |                     if(entry->attributes->nameType == TYPE_INT || entry->attributes->nameType == TYPE_REAL){
+      |                                                                        ^~
+semantics.c:638:54: error: request for member ‘attributes’ in something not a structure or union
+  638 |                         varrefNode->doubleVal = entry->attributes->doubleVal;
+      |                                                      ^~
+semantics.c:639:35: error: request for member ‘attributes’ in something not a structure or union
+  639 |                     }else if(entry->attributes->nameType == TYPE_CONST_STRING){
+      |                                   ^~
+semantics.c:641:54: error: request for member ‘attributes’ in something not a structure or union
+  641 |                         varrefNode->stringVal = entry->attributes->strPtr;
+      |                                                      ^~
+semantics.c:653:38: error: request for member ‘name’ in something not a structure or union
+  653 |         size_t msgsize = strlen(entry->name)+200;
+      |                                      ^~
+semantics.c:655:111: error: request for member ‘name’ in something not a structure or union
+  655 |         sprintf(msg,"A non-variable %s or a non-funcition was called on RHS.(Probably Procedure on RHS)",entry->name);
+      |                                                                                                               ^~
+semantics.c:662:40: error: request for member ‘attributes’ in something not a structure or union
+  662 |         varrefNode->nodeStdType = entry->attributes->nameType;
+      |                                        ^~
+semantics.c: In function ‘handleVarReferences’:
+semantics.c:672:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  672 |     SymbolTableEntry* entry = retrieveSymbol(symbolTable,idNode->stringVal);
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+semantics.c: In function ‘handleAssignOp’:
+semantics.c:719:9: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  719 |         SymbolTableEntry* varEntry = retrieveSymbol(symbolTable,varNode->lMostChild->stringVal);
+      |         ^~~~~~~~~~~~~~~~
+      |         struct 
+semantics.c:720:17: error: request for member ‘attributes’ in something not a structure or union
+  720 |         varEntry->attributes->hasBeenInitialized = true;
+      |                 ^~
+semantics.c:722:21: error: request for member ‘attributes’ in something not a structure or union
+  722 |             varEntry->attributes->hasConcreteValue=true;
+      |                     ^~
+semantics.c:724:24: error: request for member ‘attributes’ in something not a structure or union
+  724 |             if(varEntry->attributes->nameType==TYPE_INT || varEntry->attributes->nameType==TYPE_REAL)
+      |                        ^~
+semantics.c:724:68: error: request for member ‘attributes’ in something not a structure or union
+  724 |             if(varEntry->attributes->nameType==TYPE_INT || varEntry->attributes->nameType==TYPE_REAL)
+      |                                                                    ^~
+semantics.c:725:25: error: request for member ‘attributes’ in something not a structure or union
+  725 |                 varEntry->attributes->doubleVal=rhs->doubleVal;
+      |                         ^~
+semantics.c:727:25: error: request for member ‘attributes’ in something not a structure or union
+  727 |                 varEntry->attributes->strPtr=rhs->stringVal;
+      |                         ^~
+semantics.c: In function ‘handleMethodCall’:
+semantics.c:845:5: error: unknown type name ‘SymbolTableEntry’; use ‘struct’ keyword to refer to the type
+  845 |     SymbolTableEntry* funcEntry = retrieveSymbol(symbolTable,idNode->stringVal);
+      |     ^~~~~~~~~~~~~~~~
+      |     struct 
+semantics.c:851:46: error: request for member ‘attributes’ in something not a structure or union
+  851 |             funcNode->nodeStdType = funcEntry->attributes->nameType;
+      |                                              ^~

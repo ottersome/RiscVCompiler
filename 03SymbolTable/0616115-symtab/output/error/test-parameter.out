@@ -1,0 +1,174 @@
+********************************
+*       No syntax error!       *
+********************************
+L0:NodeType: Root
+	L1:NodeType: ID val:aa
+	L1:NodeType: DECLARATIONS
+		L2:NodeType: ID_LIST
+			L3:NodeType: ID val:input
+			L3:NodeType: ID val:output
+			L3:NodeType: ID val:error
+		L2:NodeType: TYPE_PROGRAM_ARG
+	L1:NodeType: DECLARATIONS_ROOT
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:a
+				L4:NodeType: ID val:b
+			L3:NodeType: TYPE_INT
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:c
+			L3:NodeType: TYPE_REAL
+	L1:NodeType: SUBPDECLARATIONS
+		L2:NodeType: PROCEDURE
+			L3:NodeType: ID val:ss
+			L3:NodeType: ARGUMENTS
+				L4:NodeType: ARGUMENT
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:c
+					L5:NodeType: TYPE_REAL
+				L4:NodeType: ARGUMENT
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:a
+						L6:NodeType: ID val:b
+					L5:NodeType: TYPE_INT
+			L3:NodeType: DECLARATIONS_ROOT
+			L3:NodeType: SUBPDECLARATIONS
+			L3:NodeType: STATEMENT_LIST
+				L4:NodeType: STMT
+		L2:NodeType: FUNCTION
+			L3:NodeType: ID val:tt
+			L3:NodeType: ARGUMENTS
+			L3:NodeType: TYPE_INT
+			L3:NodeType: DECLARATIONS_ROOT
+			L3:NodeType: SUBPDECLARATIONS
+			L3:NodeType: STATEMENT_LIST
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:tt
+						L6:NodeType: ARR_SUFFIXES
+					L5:NodeType: Number,Val: 3.000000
+	L1:NodeType: STATEMENT_LIST
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:a
+				L4:NodeType: ARR_SUFFIXES
+			L:3,Id:51,BinaryExpr,oprtr: ADD
+				L4:NodeType: Number,Val: 3.000000
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:tt
+					L5:NodeType: ARR_SUFFIXES
+		L2:NodeType: IN_STATEMENT_CALL
+			L3:NodeType: ID val:ss
+			L3:NodeType: EXPR_LIST
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:a
+					L5:NodeType: ARR_SUFFIXES
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:tt
+					L5:NodeType: ARR_SUFFIXES
+				L4:NodeType: Number,Val: 0.500000
+		L2:NodeType: IN_STATEMENT_CALL
+			L3:NodeType: ID val:ss
+			L3:NodeType: EXPR_LIST
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:tt
+					L5:NodeType: ARR_SUFFIXES
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:tt
+					L5:NodeType: ARR_SUFFIXES
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have added variable "input" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "output" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "error" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "a" in line 2 to symbol table. At depth 0 
+NOTICE: We have added variable "b" in line 2 to symbol table. At depth 0 
+NOTICE: We have added variable "c" in line 3 to symbol table. At depth 0 
+NOTICE: We have added procedure "ss" in line 5 to symbol table. At depth 0 
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have found the same variable "a" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "a" in line 5 to symbol table. At depth 1 
+NOTICE: We have found the same variable "b" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "b" in line 5 to symbol table. At depth 1 
+NOTICE: We have found the same variable "c" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "c" in line 5 to symbol table. At depth 1 
+
+
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : a, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+Name : b, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+Name : c, Type:TYPE_REAL, Class VAR, Depth 1, Dimension:0 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+NOTICE: We have added function "tt" in line 9 to symbol table. At depth 0 
+NOTICE: Opening Scope as we perform semantic check
+
+
+NOTICE at around Line(11): The var "tt" is now initialized 
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+
+
+NOTICE at around Line(15): The var "a" is now initialized 
+
+
+
+
+Semantic Error at or around Line(17):Amount of Arguments passed in call for method ss are insufficient.
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : input, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : output, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : error, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : a, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+Name : b, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+Name : c, Type:TYPE_REAL, Class VAR, Depth 0, Dimension:0 
+Name : ss, Type:TYPE_VOID, Class PROCEDURE, Depth 0, Dimension:0 Params: a(Type:TYPE_INT)(Dim:0)b(Type:TYPE_INT)(Dim:0)c(Type:TYPE_REAL)(Dim:0)
+Name : tt, Type:TYPE_INT, Class FUNCTION, Depth 0, Dimension:0 Params: 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+
+
+
+We are now printing all the symbol tables encountered
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : input, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO,
+Name : output, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO,
+Name : error, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO,
+Name : a, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO,
+Name : b, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO,
+Name : c, Type:TYPE_REAL, Class VAR, Depth 0, IsArray:NO,
+Name : ss, Type:TYPE_VOID, Class PROCEDURE, Depth 0, IsArray:NO,Params: a(Type:TYPE_INT)(Dim:0)b(Type:TYPE_INT)(Dim:0)c(Type:TYPE_REAL)(Dim:0)
+Name : tt, Type:TYPE_INT, Class FUNCTION, Depth 0, IsArray:NO,Params: 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : a, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO,
+Name : b, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO,
+Name : c, Type:TYPE_REAL, Class VAR, Depth 1, IsArray:NO,
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+********************************
+*    Semantic Check Done!      *
+********************************

@@ -1,0 +1,10 @@
+ERROR Line(17): End of line in String: " Multi-Line
+Please escape new lines if you want to include them in your string.
+ERROR Line(18): End of line in String: "
+Please escape new lines if you want to include them in your string.
+ERROR Line(19): End of line in String: " Multi-Line
+Please escape new lines if you want to include them in your string.
+ERROR Line(21): End of line in String: " Multi-Line
+Please escape new lines if you want to include them in your string.
+ERROR Line(25): End of line in String: "  
+Please escape new lines if you want to include them in your string.

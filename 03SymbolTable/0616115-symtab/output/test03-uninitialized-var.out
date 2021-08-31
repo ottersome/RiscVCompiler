@@ -1,0 +1,128 @@
+********************************
+*       No syntax error!       *
+********************************
+L0:NodeType: Root
+	L1:NodeType: ID val:ab
+	L1:NodeType: DECLARATIONS
+		L2:NodeType: ID_LIST
+			L3:NodeType: ID val:cd
+			L3:NodeType: ID val:ef
+			L3:NodeType: ID val:gh
+		L2:NodeType: TYPE_PROGRAM_ARG
+	L1:NodeType: DECLARATIONS_ROOT
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:ij
+			L3:NodeType: TYPE_INT
+	L1:NodeType: SUBPDECLARATIONS
+		L2:NodeType: FUNCTION
+			L3:NodeType: ID val:kl
+			L3:NodeType: ARGUMENTS
+				L4:NodeType: ARGUMENT
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:mn
+					L5:NodeType: TYPE_INT
+			L3:NodeType: TYPE_INT
+			L3:NodeType: DECLARATIONS_ROOT
+			L3:NodeType: SUBPDECLARATIONS
+			L3:NodeType: STATEMENT_LIST
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:op
+						L6:NodeType: ARR_SUFFIXES
+					L:5,Id:30,BinaryExpr,oprtr: ADD
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:ij
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:mn
+							L7:NodeType: ARR_SUFFIXES
+	L1:NodeType: STATEMENT_LIST
+		L2:NodeType: IF_ELSE
+			L:3,Id:36,BinaryExpr,oprtr: GREATERTHAN
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:ij
+					L5:NodeType: ARR_SUFFIXES
+				L4:NodeType: Number,Val: 1.000000
+			L3:NodeType: ASSIGN_OP
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:op
+					L5:NodeType: ARR_SUFFIXES
+				L4:NodeType: Number,Val: 1.000000
+			L3:NodeType: ASSIGN_OP
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:op
+					L5:NodeType: ARR_SUFFIXES
+				L4:NodeType: Number,Val: 2.000000
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have added variable "cd" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "ef" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "gh" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "ij" in line 4 to symbol table. At depth 0 
+NOTICE: We have added function "kl" in line 6 to symbol table. At depth 0 
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have added variable "mn" in line 6 to symbol table. At depth 1 
+
+
+Semantic Error at or around Line(8):Undeclared Variable op
+Semantic Error at or around Line(8):Use of RHS varibale with name:ij that has not been initialized
+Semantic Error at or around Line(8):Use of RHS varibale with name:mn that has not been initialized
+Semantic Error at or around Line(6):The function "kl" has no return value
+
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : mn, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+
+
+
+
+Semantic Error at or around Line(13):Use of RHS varibale with name:ij that has not been initialized
+Semantic Error at or around Line(13):Relative Operation on Incompatible Types
+
+
+Semantic Error at or around Line(14):Undeclared Variable op
+
+
+Semantic Error at or around Line(15):Undeclared Variable op
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : cd, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : ef, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : gh, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : ij, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+Name : kl, Type:TYPE_INT, Class FUNCTION, Depth 0, Dimension:0 Params: mn(Type:TYPE_INT)(Dim:0)
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+
+
+
+We are now printing all the symbol tables encountered
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : cd, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO,
+Name : ef, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO,
+Name : gh, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO,
+Name : ij, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO,
+Name : kl, Type:TYPE_INT, Class FUNCTION, Depth 0, IsArray:NO,Params: mn(Type:TYPE_INT)(Dim:0)
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : mn, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO,
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+********************************
+*    Semantic Check Done!      *
+********************************

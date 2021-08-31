@@ -1,0 +1,173 @@
+********************************
+*       No syntax error!       *
+********************************
+L0:NodeType: Root
+	L1:NodeType: ID val:foo
+	L1:NodeType: DECLARATIONS
+		L2:NodeType: ID_LIST
+			L3:NodeType: ID val:input
+			L3:NodeType: ID val:output
+			L3:NodeType: ID val:error
+		L2:NodeType: TYPE_PROGRAM_ARG
+	L1:NodeType: DECLARATIONS_ROOT
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:a
+				L4:NodeType: ID val:b
+			L3:NodeType: TYPE_INT
+	L1:NodeType: SUBPDECLARATIONS
+		L2:NodeType: FUNCTION
+			L3:NodeType: ID val:sum
+			L3:NodeType: ARGUMENTS
+				L4:NodeType: ARGUMENT
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:a
+						L6:NodeType: ID val:b
+					L5:NodeType: TYPE_INT
+			L3:NodeType: TYPE_INT
+			L3:NodeType: DECLARATIONS_ROOT
+			L3:NodeType: SUBPDECLARATIONS
+			L3:NodeType: STATEMENT_LIST
+				L4:NodeType: IF_ELSE
+					L:5,Id:26,BinaryExpr,oprtr: LESSTHANEQ
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:a
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: Number,Val: 0.000000
+					L5:NodeType: ASSIGN_OP
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:sum
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: Number,Val: 0.000000
+					L5:NodeType: ASSIGN_OP
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:sum
+							L7:NodeType: ARR_SUFFIXES
+						L:6,Id:48,BinaryExpr,oprtr: ADD
+							L7:NodeType: VARREF
+								L8:NodeType: ID val:a
+								L8:NodeType: ARR_SUFFIXES
+							L7:NodeType: FUNC_CALL
+								L8:NodeType: ID val:sum
+								L8:NodeType: EXPR_LIST
+									L:9,Id:44,BinaryExpr,oprtr: SUBTRACT
+										L10:NodeType: VARREF
+											L11:NodeType: ID val:a
+											L11:NodeType: ARR_SUFFIXES
+										L10:NodeType: Number,Val: 1.000000
+									L9:NodeType: Number,Val: 0.000000
+	L1:NodeType: STATEMENT_LIST
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:a
+				L4:NodeType: ARR_SUFFIXES
+			L3:NodeType: FUNC_CALL
+				L4:NodeType: ID val:sum
+				L4:NodeType: EXPR_LIST
+					L5:NodeType: Number,Val: 10.000000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:a
+				L4:NodeType: ARR_SUFFIXES
+			L3:NodeType: FUNC_CALL
+				L4:NodeType: ID val:sum
+				L4:NodeType: EXPR_LIST
+					L5:NodeType: Number,Val: 10.000000
+					L5:NodeType: Number,Val: 20.000000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:b
+				L4:NodeType: ARR_SUFFIXES
+			L3:NodeType: FUNC_CALL
+				L4:NodeType: ID val:sum
+				L4:NodeType: EXPR_LIST
+					L5:UnaryExpr,oprtr: OP_NEGSIGN
+						L6:NodeType: Number,Val: 10.000000
+					L5:NodeType: Number,Val: 4.000000
+					L5:NodeType: Number,Val: 7.000000
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have added variable "input" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "output" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "error" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "a" in line 3 to symbol table. At depth 0 
+NOTICE: We have added variable "b" in line 3 to symbol table. At depth 0 
+NOTICE: We have added function "sum" in line 6 to symbol table. At depth 0 
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have found the same variable "a" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "a" in line 6 to symbol table. At depth 1 
+NOTICE: We have found the same variable "b" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "b" in line 6 to symbol table. At depth 1 
+
+
+
+
+Semantic Error at or around Line(8):Use of RHS varibale with name:a that has not been initialized
+Semantic Error at or around Line(8):Relative Operation on Incompatible Types
+
+
+NOTICE at around Line(8): The var "sum" is now initialized 
+
+
+Semantic Error at or around Line(9):Use of RHS varibale with name:a that has not been initialized
+Semantic Error at or around Line(9):Use of RHS varibale with name:a that has not been initialized
+Semantic Error at or around Line(9):Incompatible type between Argument and Parameter.
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : a, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+Name : b, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+
+
+Semantic Error at or around Line(14):Amount of Arguments passed in call for method sum are insufficient.
+
+
+NOTICE at around Line(15): The var "a" is now initialized 
+
+
+Semantic Error at or around Line(16):Too many arguments passed for the method sum.
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : input, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : output, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : error, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : a, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+Name : b, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+Name : sum, Type:TYPE_INT, Class FUNCTION, Depth 0, Dimension:0 Params: a(Type:TYPE_INT)(Dim:0)b(Type:TYPE_INT)(Dim:0)
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+
+
+
+We are now printing all the symbol tables encountered
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : input, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : output, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : error, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : a, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : b, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : sum, Type:TYPE_INT, Class FUNCTION, Depth 0, IsArray:NO Parameters Params: a(Type:TYPE_INT)(Dim:0)b(Type:TYPE_INT)(Dim:0)
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : a, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO Parameters 
+Name : b, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO Parameters 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+********************************
+*    Semantic Check Done!      *
+********************************

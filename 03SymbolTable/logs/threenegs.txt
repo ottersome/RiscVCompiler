@@ -1,0 +1,9 @@
+for the assigment c:= ---5; I get the following AST
+L2:NodeType: ASSIGN_OP
+    L3:NodeType: VARREF
+            L4:NodeType: ID val:c
+            L4:NodeType: ARR_SUFFIXES
+    L3:UnaryExpr,oprtr: OP_NEGSIGN
+            L4:UnaryExpr,oprtr: OP_NEGSIGN
+                    L5:UnaryExpr,oprtr: OP_NEGSIGN
+                            L6:NodeType: Number,Val: 5

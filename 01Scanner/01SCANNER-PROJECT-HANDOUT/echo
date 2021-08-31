@@ -1,0 +1,26 @@
+ERROR LINE(5): Illegal Character : @
+ERROR LINE(5): Illegal Character : $
+ERROR LINE(28): Illegal Character : '
+ERROR LINE(28): Illegal Character : !
+ERROR LINE(28): Illegal Character : !
+ERROR LINE(28): Illegal Character : '
+ERROR Line(32): End of line in String: "cross 
+Please escape new lines if you want to include them in your string.
+ERROR Line(33): End of line in String: ";
+Please escape new lines if you want to include them in your string.
+ERROR LINE(34): Illegal Character : ~
+ERROR LINE(34): Illegal Character : !
+ERROR LINE(34): Illegal Character : @
+ERROR LINE(34): Illegal Character : #
+ERROR LINE(34): Illegal Character : $
+ERROR LINE(34): Illegal Character : %
+ERROR LINE(34): Illegal Character : ^
+ERROR LINE(34): Illegal Character : &
+ERROR LINE(34): Illegal Character : _
+ERROR LINE(34): Illegal Character : |
+ERROR LINE(34): Illegal Character : `
+ERROR LINE(34): Illegal Character : \
+ERROR LINE(34): Illegal Character : '
+ERROR LINE(34): Illegal Character : {
+ERROR LINE(34): Illegal Character : }
+ERROR LINE(34): Illegal Character : ?

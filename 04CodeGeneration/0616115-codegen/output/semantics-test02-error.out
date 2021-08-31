@@ -1,0 +1,760 @@
+********************************
+*       No syntax error!       *
+********************************
+L0:NodeType: Root
+	L1:NodeType: ID val:foo
+	L1:NodeType: ID_LIST
+		L2:NodeType: ID val:input
+		L2:NodeType: ID val:output
+		L2:NodeType: ID val:error
+	L1:NodeType: DECLARATIONS_ROOT
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:a
+				L4:NodeType: ID val:b
+				L4:NodeType: ID val:c
+			L3:NodeType: TYPE_INT
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:d
+				L4:NodeType: ID val:e
+			L3:NodeType: TYPE_INT
+				L4:NodeType: TYPE_ARR
+					L5:NodeType: Number,Val: 1.000000
+					L5:NodeType: Number,Val: 10.000000
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:g
+				L4:NodeType: ID val:h
+			L3:NodeType: TYPE_REAL
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:k
+			L3:NodeType: TYPE_REAL
+				L4:NodeType: TYPE_ARR
+					L5:NodeType: Number,Val: 23.000000
+					L5:NodeType: Number,Val: 57.000000
+				L4:NodeType: TYPE_ARR
+					L5:NodeType: Number,Val: 23.000000
+					L5:NodeType: Number,Val: 57.000000
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:a
+			L3:NodeType: TYPE_REAL
+				L4:NodeType: TYPE_ARR
+					L5:NodeType: Number,Val: 23.000000
+					L5:NodeType: Number,Val: 57.000000
+				L4:NodeType: TYPE_ARR
+					L5:NodeType: Number,Val: 23.000000
+					L5:NodeType: Number,Val: 57.000000
+	L1:NodeType: SUBPDECLARATIONS
+		L2:NodeType: PROCEDURE
+			L3:NodeType: ID val:sort
+			L3:NodeType: ARGUMENTS
+				L4:NodeType: ARGUMENT
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:a
+					L5:NodeType: TYPE_INT
+						L6:NodeType: TYPE_ARR
+							L7:NodeType: Number,Val: 1.000000
+							L7:NodeType: Number,Val: 10.000000
+			L3:NodeType: DECLARATIONS_ROOT
+				L4:NodeType: DECLARATIONS
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:a
+						L6:NodeType: ID val:b
+						L6:NodeType: ID val:c
+					L5:NodeType: TYPE_INT
+			L3:NodeType: SUBPDECLARATIONS
+			L3:NodeType: STATEMENT_LIST
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:e
+						L6:NodeType: ARR_SUFFIXES
+					L:5,Id:73,BinaryExpr,oprtr: ADD
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:a
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:d
+							L7:NodeType: ARR_SUFFIXES
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:a
+						L6:NodeType: ARR_SUFFIXES
+					L:5,Id:85,BinaryExpr,oprtr: SUBTRACT
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:qqq
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:rrr
+							L7:NodeType: ARR_SUFFIXES
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:d
+						L6:NodeType: ARR_SUFFIXES
+					L5:NodeType: FUNC_CALL
+						L6:NodeType: ID val:f
+						L6:NodeType: EXPR_LIST
+							L7:NodeType: VARREF
+								L8:NodeType: ID val:k
+								L8:NodeType: ARR_SUFFIXES
+							L7:NodeType: VARREF
+								L8:NodeType: ID val:e
+								L8:NodeType: ARR_SUFFIXES
+				L4:NodeType: STMT
+		L2:NodeType: FUNCTION
+			L3:NodeType: ID val:addition
+			L3:NodeType: ARGUMENTS
+				L4:NodeType: ARGUMENT
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:a
+						L6:NodeType: ID val:b
+					L5:NodeType: TYPE_INT
+			L3:NodeType: TYPE_INT
+			L3:NodeType: DECLARATIONS_ROOT
+				L4:NodeType: DECLARATIONS
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:c
+					L5:NodeType: TYPE_INT
+			L3:NodeType: SUBPDECLARATIONS
+			L3:NodeType: STATEMENT_LIST
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:addition
+						L6:NodeType: ARR_SUFFIXES
+					L:5,Id:125,BinaryExpr,oprtr: ADD
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:a
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:b
+							L7:NodeType: ARR_SUFFIXES
+		L2:NodeType: FUNCTION
+			L3:NodeType: ID val:addition
+			L3:NodeType: ARGUMENTS
+				L4:NodeType: ARGUMENT
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:c
+						L6:NodeType: ID val:d
+					L5:NodeType: TYPE_INT
+			L3:NodeType: TYPE_INT
+			L3:NodeType: DECLARATIONS_ROOT
+				L4:NodeType: DECLARATIONS
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:e
+					L5:NodeType: TYPE_INT
+			L3:NodeType: SUBPDECLARATIONS
+			L3:NodeType: STATEMENT_LIST
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:addition
+						L6:NodeType: ARR_SUFFIXES
+					L:5,Id:152,BinaryExpr,oprtr: ADD
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:c
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:d
+							L7:NodeType: ARR_SUFFIXES
+		L2:NodeType: FUNCTION
+			L3:NodeType: ID val:addition
+			L3:NodeType: ARGUMENTS
+				L4:NodeType: ARGUMENT
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:a
+						L6:NodeType: ID val:b
+					L5:NodeType: TYPE_REAL
+			L3:NodeType: TYPE_REAL
+			L3:NodeType: DECLARATIONS_ROOT
+				L4:NodeType: DECLARATIONS
+					L5:NodeType: ID_LIST
+						L6:NodeType: ID val:c
+					L5:NodeType: TYPE_INT
+			L3:NodeType: SUBPDECLARATIONS
+			L3:NodeType: STATEMENT_LIST
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:addition
+						L6:NodeType: ARR_SUFFIXES
+					L:5,Id:179,BinaryExpr,oprtr: ADD
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:a
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:b
+							L7:NodeType: ARR_SUFFIXES
+	L1:NodeType: STATEMENT_LIST
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:a
+				L4:NodeType: ARR_SUFFIXES
+			L3:NodeType: Number,Val: 1.000000
+		L2:NodeType: WHILE
+			L:3,Id:191,BinaryExpr,oprtr: LESSTHAN
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:a
+					L5:NodeType: ARR_SUFFIXES
+				L4:NodeType: Number,Val: 10.000000
+			L3:NodeType: STATEMENT_LIST
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:sum
+						L6:NodeType: ARR_SUFFIXES
+					L:5,Id:202,BinaryExpr,oprtr: ADD
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:sum
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:a
+							L7:NodeType: ARR_SUFFIXES
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:a
+						L6:NodeType: ARR_SUFFIXES
+					L:5,Id:212,BinaryExpr,oprtr: ADD
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:a
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: Number,Val: 1.000000
+		L2:NodeType: STATEMENT_LIST
+			L3:NodeType: ASSIGN_OP
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:b
+					L5:NodeType: ARR_SUFFIXES
+				L4:NodeType: Number,Val: 1.000000
+			L3:NodeType: WHILE
+				L:4,Id:224,BinaryExpr,oprtr: LESSTHAN
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:b
+						L6:NodeType: ARR_SUFFIXES
+					L5:NodeType: Number,Val: 11.000000
+				L4:NodeType: STATEMENT_LIST
+					L5:NodeType: ASSIGN_OP
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:d
+							L7:NodeType: ARR_SUFFIXES
+								L8:NodeType: VARREF
+									L9:NodeType: ID val:b
+									L9:NodeType: ARR_SUFFIXES
+						L:6,Id:244,BinaryExpr,oprtr: ADD
+							L7:NodeType: VARREF
+								L8:NodeType: ID val:b
+								L8:NodeType: ARR_SUFFIXES
+							L:7,Id:238,BinaryExpr,oprtr: MULTIPLY
+								L8:NodeType: VARREF
+									L9:NodeType: ID val:b
+									L9:NodeType: ARR_SUFFIXES
+								L:8,Id:243,BinaryExpr,oprtr: SUBTRACT
+									L9:NodeType: VARREF
+										L10:NodeType: ID val:b
+										L10:NodeType: ARR_SUFFIXES
+									L9:NodeType: Number,Val: 1.000000
+					L5:NodeType: ASSIGN_OP
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:b
+							L7:NodeType: ARR_SUFFIXES
+						L:6,Id:254,BinaryExpr,oprtr: ADD
+							L7:NodeType: VARREF
+								L8:NodeType: ID val:b
+								L8:NodeType: ARR_SUFFIXES
+							L7:NodeType: Number,Val: 1.000000
+			L3:NodeType: IN_STATEMENT_CALL
+				L4:NodeType: ID val:sort
+				L4:NodeType: EXPR_LIST
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:d
+						L6:NodeType: ARR_SUFFIXES
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:k
+				L4:NodeType: ARR_SUFFIXES
+					L5:NodeType: Number,Val: 26.000000
+					L5:NodeType: Number,Val: 25.000000
+			L3:NodeType: Number,Val: 3.000000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:k
+				L4:NodeType: ARR_SUFFIXES
+					L5:NodeType: Number,Val: 26.000000
+					L5:NodeType: Number,Val: 25.000000
+			L3:NodeType: Number,Val: 3.140000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:k
+				L4:NodeType: ARR_SUFFIXES
+					L5:NodeType: Number,Val: 26.000000
+					L5:NodeType: Number,Val: 25.000000
+			L:3,Id:288,BinaryExpr,oprtr: ADD
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:k
+					L5:NodeType: ARR_SUFFIXES
+						L6:NodeType: Number,Val: 26.000000
+						L6:NodeType: Number,Val: 25.000000
+				L4:NodeType: Number,Val: 3.000000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:k
+				L4:NodeType: ARR_SUFFIXES
+					L5:NodeType: Number,Val: 126.000000
+					L5:NodeType: Number,Val: 25.000000
+			L3:NodeType: Number,Val: 3.140000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:k
+				L4:NodeType: ARR_SUFFIXES
+					L5:NodeType: Number,Val: 26.000000
+					L5:NodeType: Number,Val: 125.000000
+			L3:NodeType: Number,Val: 3.140000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:k
+				L4:NodeType: ARR_SUFFIXES
+					L5:NodeType: Number,Val: 126.000000
+					L5:NodeType: Number,Val: 125.000000
+			L3:NodeType: Number,Val: 3.140000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:a
+				L4:NodeType: ARR_SUFFIXES
+			L3:NodeType: FUNC_CALL
+				L4:NodeType: ID val:extf
+				L4:NodeType: EXPR_LIST
+					L5:NodeType: Number,Val: 20.000000
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:sum
+						L6:NodeType: ARR_SUFFIXES
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:a
+				L4:NodeType: ARR_SUFFIXES
+			L3:NodeType: FUNC_CALL
+				L4:NodeType: ID val:bbb
+				L4:NodeType: EXPR_LIST
+					L5:NodeType: Number,Val: 20.000000
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:sum
+						L6:NodeType: ARR_SUFFIXES
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:k
+				L4:NodeType: ARR_SUFFIXES
+					L5:NodeType: Number,Val: 26.000000
+					L5:NodeType: Number,Val: 25.000000
+			L:3,Id:344,BinaryExpr,oprtr: ADD
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:k
+					L5:NodeType: ARR_SUFFIXES
+						L6:NodeType: Number,Val: 26.000000
+						L6:NodeType: Number,Val: 25.000000
+				L4:NodeType: Number,Val: 5.000000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:k
+				L4:NodeType: ARR_SUFFIXES
+					L5:NodeType: Number,Val: 26.000000
+					L5:NodeType: Number,Val: 25.000000
+			L:3,Id:357,BinaryExpr,oprtr: ADD
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:k
+					L5:NodeType: ARR_SUFFIXES
+						L6:NodeType: Number,Val: 26.000000
+						L6:NodeType: Number,Val: 25.000000
+				L4:NodeType: Number,Val: 333.000000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:k
+				L4:NodeType: ARR_SUFFIXES
+					L5:NodeType: Number,Val: 26.000000
+					L5:NodeType: Number,Val: 25.000000
+			L:3,Id:370,BinaryExpr,oprtr: ADD
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:k
+					L5:NodeType: ARR_SUFFIXES
+						L6:NodeType: Number,Val: 26.000000
+						L6:NodeType: Number,Val: 25.000000
+				L4:NodeType: Number,Val: 6666.000000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:b
+				L4:NodeType: ARR_SUFFIXES
+			L3:NodeType: Number,Val: 1.000000
+		L2:NodeType: WHILE
+			L:3,Id:380,BinaryExpr,oprtr: LESSTHANEQ
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:b
+					L5:NodeType: ARR_SUFFIXES
+				L4:NodeType: VARREF
+					L5:NodeType: ID val:k
+					L5:NodeType: ARR_SUFFIXES
+			L3:NodeType: STATEMENT_LIST
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:sum
+						L6:NodeType: ARR_SUFFIXES
+					L:5,Id:396,BinaryExpr,oprtr: ADD
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:sum
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:a
+							L7:NodeType: ARR_SUFFIXES
+								L8:NodeType: VARREF
+									L9:NodeType: ID val:b
+									L9:NodeType: ARR_SUFFIXES
+				L4:NodeType: ASSIGN_OP
+					L5:NodeType: VARREF
+						L6:NodeType: ID val:b
+						L6:NodeType: ARR_SUFFIXES
+					L:5,Id:406,BinaryExpr,oprtr: ADD
+						L6:NodeType: VARREF
+							L7:NodeType: ID val:b
+							L7:NodeType: ARR_SUFFIXES
+						L6:NodeType: Number,Val: 1.000000
+		L2:NodeType: STMT
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have added variable "a" in line 7 to symbol table. At depth 0 
+NOTICE: We have added variable "b" in line 7 to symbol table. At depth 0 
+NOTICE: We have added variable "c" in line 7 to symbol table. At depth 0 
+NOTICE: We have added variable "d" in line 8 to symbol table. At depth 0 
+NOTICE: We have added variable "e" in line 8 to symbol table. At depth 0 
+NOTICE: We have added variable "g" in line 9 to symbol table. At depth 0 
+NOTICE: We have added variable "h" in line 9 to symbol table. At depth 0 
+NOTICE: We have added variable "k" in line 10 to symbol table. At depth 0 
+Semantic Error: Redeclaration on Variable a at depth 0
+            We will proceed by deleting this new name from the table and leaving the old one.
+NOTICE: We have added procedure "sort" in line 15 to symbol table. At depth 0 
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have found the same variable "a" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "a" in line 15 to symbol table. At depth 1 
+Semantic Error: Redeclaration on Variable a at depth 1
+            We will proceed by deleting this new name from the table and leaving the old one.
+NOTICE: We have found the same variable "b" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "b" in line 16 to symbol table. At depth 1 
+NOTICE: We have found the same variable "c" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "c" in line 16 to symbol table. At depth 1 
+
+
+Deref amount 0
+Semantic Error at Line(18):Use of RHS varibale with name:a that has not been initialized
+Semantic Error at Line(18):Use of RHS varibale with name:d that has not been initialized
+
+
+Deref amount 0
+Semantic Error at Line(19):Undeclared Variable qqq
+Semantic Error at Line(19):Undeclared Variable rrr
+
+
+Deref amount 0
+Semantic Error at Line(20):Undeclared Function/Procedure "f"
+
+
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : a, Type:TYPE_INT, Class VAR, Depth 1, Dimension:1 Ranges:(1,10),
+Name : b, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+Name : c, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+NOTICE: We have added function "addition" in line 24 to symbol table. At depth 0 
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have found the same variable "a" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "a" in line 24 to symbol table. At depth 1 
+NOTICE: We have found the same variable "b" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "b" in line 24 to symbol table. At depth 1 
+NOTICE: We have found the same variable "c" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "c" in line 25 to symbol table. At depth 1 
+
+
+Semantic Error at Line(27):Use of RHS varibale with name:a that has not been initialized
+Semantic Error at Line(27):Use of RHS varibale with name:b that has not been initialized
+Semantic Error at Line(24):The function "addition" has no return value
+
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : a, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+Name : b, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+Name : c, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+Semantic Error: Redeclaration on Function addition at depth 0
+                We will proceed by deleting this new name from the table and leaving the old one.
+                Furthermore, although the function name is not being added to the table we will do semantic check
+                on its body to catch as many errors as possible.
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have found the same variable "c" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "c" in line 31 to symbol table. At depth 1 
+NOTICE: We have found the same variable "d" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "d" in line 31 to symbol table. At depth 1 
+NOTICE: We have found the same variable "e" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "e" in line 33 to symbol table. At depth 1 
+
+
+Semantic Error at Line(35):The name addition is for a function outside this scope and thus cannot be set as LHS .
+Semantic Error at Line(35):Use of RHS varibale with name:c that has not been initialized
+Semantic Error at Line(35):Use of RHS varibale with name:d that has not been initialized
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : c, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+Name : d, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+Name : e, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+Semantic Error: Redeclaration on Function addition at depth 0
+                We will proceed by deleting this new name from the table and leaving the old one.
+                Furthermore, although the function name is not being added to the table we will do semantic check
+                on its body to catch as many errors as possible.
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have found the same variable "a" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "a" in line 39 to symbol table. At depth 1 
+NOTICE: We have found the same variable "b" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "b" in line 39 to symbol table. At depth 1 
+NOTICE: We have found the same variable "c" in an outer scope. This is not an error.just letting you know
+Removed from chain
+NOTICE: We have added variable "c" in line 41 to symbol table. At depth 1 
+
+
+Semantic Error at Line(43):The name addition is for a function outside this scope and thus cannot be set as LHS .
+Semantic Error at Line(43):Use of RHS varibale with name:a that has not been initialized
+Semantic Error at Line(43):Use of RHS varibale with name:b that has not been initialized
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : a, Type:TYPE_REAL, Class VAR, Depth 1, Dimension:0 
+Name : b, Type:TYPE_REAL, Class VAR, Depth 1, Dimension:0 
+Name : c, Type:TYPE_INT, Class VAR, Depth 1, Dimension:0 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+
+
+NOTICE: The var "a" is now initialized 
+
+
+
+
+
+
+
+
+Semantic Error at Line(51):Undeclared Variable sum
+Semantic Error at Line(51):Undeclared Variable sum
+
+
+NOTICE: The var "a" is now initialized 
+
+
+
+
+NOTICE: The var "b" is now initialized 
+
+
+
+
+
+
+
+
+Bounds index is 0 while dims is  1
+Deref amount 1
+NOTICE: The var "d" is now initialized 
+
+
+NOTICE: The var "b" is now initialized 
+
+
+Deref amount 0
+
+
+Bounds index is 0 while dims is  3
+Bounds index is 2 while dims is  3
+Deref amount 2
+Semantic Error at Line(63):Incompatible LHS and RHS Types for assignment(TYPE_REAL=TYPE_INT).
+
+
+Bounds index is 0 while dims is  3
+Bounds index is 2 while dims is  3
+Deref amount 2
+NOTICE: The var "k" is now initialized 
+
+
+Bounds index is 0 while dims is  3
+Bounds index is 2 while dims is  3
+Deref amount 2
+Bounds index is 0 while dims is  3
+Bounds index is 2 while dims is  3
+Deref amount 2
+Semantic Error at Line(65):Arithmetic Operation on Incompatible Types
+
+
+Bounds index is 0 while dims is  3
+Bounds index is 2 while dims is  3
+Semantic Error at Line(66):Array out of bounds
+
+Deref amount 2
+
+
+Bounds index is 0 while dims is  3
+Semantic Error at Line(67):Array out of bounds
+
+Bounds index is 2 while dims is  3
+Deref amount 2
+
+
+Bounds index is 0 while dims is  3
+Semantic Error at Line(68):Array out of bounds
+
+Bounds index is 2 while dims is  3
+Semantic Error at Line(68):Array out of bounds
+
+Deref amount 2
+
+
+Semantic Error at Line(69):Undeclared Function/Procedure "extf"
+
+
+Semantic Error at Line(75):Undeclared Function/Procedure "bbb"
+
+
+Bounds index is 0 while dims is  3
+Bounds index is 2 while dims is  3
+Deref amount 2
+Bounds index is 0 while dims is  3
+Bounds index is 2 while dims is  3
+Deref amount 2
+Semantic Error at Line(83):Arithmetic Operation on Incompatible Types
+
+
+Bounds index is 0 while dims is  3
+Bounds index is 2 while dims is  3
+Deref amount 2
+Bounds index is 0 while dims is  3
+Bounds index is 2 while dims is  3
+Deref amount 2
+Semantic Error at Line(86):Arithmetic Operation on Incompatible Types
+
+
+Bounds index is 0 while dims is  3
+Bounds index is 2 while dims is  3
+Deref amount 2
+Bounds index is 0 while dims is  3
+Bounds index is 2 while dims is  3
+Deref amount 2
+Semantic Error at Line(89):Arithmetic Operation on Incompatible Types
+
+
+NOTICE: The var "b" is now initialized 
+
+
+
+
+Deref amount 0
+Semantic Error at Line(99):Trying to perform a binary operation(Arithmetic, Relational, or Logical) on an array. This is illegal.
+
+
+
+
+Semantic Error at Line(101):Undeclared Variable sum
+Semantic Error at Line(101):Undeclared Variable sum
+
+
+NOTICE: The var "b" is now initialized 
+
+
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : a, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+Name : b, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+Name : c, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+Name : d, Type:TYPE_INT, Class VAR, Depth 0, Dimension:1 Ranges:(1,10),
+Name : e, Type:TYPE_INT, Class VAR, Depth 0, Dimension:1 Ranges:(1,10),
+Name : g, Type:TYPE_REAL, Class VAR, Depth 0, Dimension:0 
+Name : h, Type:TYPE_REAL, Class VAR, Depth 0, Dimension:0 
+Name : k, Type:TYPE_REAL, Class VAR, Depth 0, Dimension:2 Ranges:(23,57),(23,57),
+Name : sort, Type:TYPE_VOID, Class PROCEDURE, Depth 0, Dimension:0 Params: a(Type:TYPE_INT)(Dim:1)
+Name : addition, Type:TYPE_INT, Class FUNCTION, Depth 0, Dimension:0 Params: a(Type:TYPE_INT)(Dim:0)b(Type:TYPE_INT)(Dim:0)
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+
+
+
+We are now printing all the symbol tables encountered
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : a, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : b, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : c, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : d, Type:TYPE_INT, Class VAR, Depth 0, IsArray:YES Parameters Ranges:(1,10),
+Name : e, Type:TYPE_INT, Class VAR, Depth 0, IsArray:YES Parameters Ranges:(1,10),
+Name : g, Type:TYPE_REAL, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : h, Type:TYPE_REAL, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : k, Type:TYPE_REAL, Class VAR, Depth 0, IsArray:YES Parameters Ranges:(23,57),(23,57),
+Name : sort, Type:TYPE_VOID, Class PROCEDURE, Depth 0, IsArray:NO Parameters Params: a(Type:TYPE_INT)(Dim:1)
+Name : addition, Type:TYPE_INT, Class FUNCTION, Depth 0, IsArray:NO Parameters Params: a(Type:TYPE_INT)(Dim:0)b(Type:TYPE_INT)(Dim:0)
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : a, Type:TYPE_INT, Class VAR, Depth 1, IsArray:YES Parameters Ranges:(1,10),
+Name : b, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO Parameters 
+Name : c, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO Parameters 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : a, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO Parameters 
+Name : b, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO Parameters 
+Name : c, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO Parameters 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : c, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO Parameters 
+Name : d, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO Parameters 
+Name : e, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO Parameters 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : a, Type:TYPE_REAL, Class VAR, Depth 1, IsArray:NO Parameters 
+Name : b, Type:TYPE_REAL, Class VAR, Depth 1, IsArray:NO Parameters 
+Name : c, Type:TYPE_INT, Class VAR, Depth 1, IsArray:NO Parameters 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+********************************
+*    Semantic Check Done!      *
+********************************

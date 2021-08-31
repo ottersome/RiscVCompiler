@@ -1,0 +1,95 @@
+********************************
+*       No syntax error!       *
+********************************
+L0:NodeType: Root
+	L1:NodeType: ID val:foo
+	L1:NodeType: DECLARATIONS
+		L2:NodeType: ID_LIST
+			L3:NodeType: ID val:input
+			L3:NodeType: ID val:output
+			L3:NodeType: ID val:error
+		L2:NodeType: TYPE_PROGRAM_ARG
+	L1:NodeType: DECLARATIONS_ROOT
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:a
+				L4:NodeType: ID val:c
+			L3:NodeType: TYPE_INT
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:b
+			L3:NodeType: TYPE_REAL
+	L1:NodeType: SUBPDECLARATIONS
+	L1:NodeType: STATEMENT_LIST
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:a
+				L4:NodeType: ARR_SUFFIXES
+			L:3,Id:22,BinaryExpr,oprtr: SUBTRACT
+				L4:UnaryExpr,oprtr: OP_NEGSIGN
+					L5:NodeType: Number,Val: 3.000000
+				L4:NodeType: Number,Val: 4.000000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:c
+				L4:NodeType: ARR_SUFFIXES
+			L3:UnaryExpr,oprtr: OP_NEGSIGN
+				L4:UnaryExpr,oprtr: OP_NEGSIGN
+					L5:UnaryExpr,oprtr: OP_NEGSIGN
+						L6:NodeType: Number,Val: 5.000000
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:b
+				L4:NodeType: ARR_SUFFIXES
+			L:3,Id:39,BinaryExpr,oprtr: SUBTRACT
+				L4:UnaryExpr,oprtr: OP_NEGSIGN
+					L5:NodeType: Number,Val: 5.000000
+				L4:NodeType: Number,Val: 6.000000
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have added variable "input" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "output" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "error" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "a" in line 2 to symbol table. At depth 0 
+NOTICE: We have added variable "c" in line 2 to symbol table. At depth 0 
+NOTICE: We have added variable "b" in line 3 to symbol table. At depth 0 
+
+
+NOTICE: The var "a" is now initialized 
+
+
+NOTICE: The var "c" is now initialized 
+
+
+NOTICE: The var "b" is now initialized 
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : input, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : output, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : error, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : a, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+Name : c, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+Name : b, Type:TYPE_REAL, Class VAR, Depth 0, Dimension:0 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+
+
+
+We are now printing all the symbol tables encountered
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : input, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : output, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : error, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : a, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : c, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : b, Type:TYPE_REAL, Class VAR, Depth 0, IsArray:NO Parameters 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+********************************
+*    Semantic Check Done!      *
+********************************

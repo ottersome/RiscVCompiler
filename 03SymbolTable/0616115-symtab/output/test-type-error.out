@@ -1,0 +1,71 @@
+********************************
+*       No syntax error!       *
+********************************
+L0:NodeType: Root
+	L1:NodeType: ID val:aaa
+	L1:NodeType: DECLARATIONS
+		L2:NodeType: ID_LIST
+			L3:NodeType: ID val:aaa
+			L3:NodeType: ID val:bbb
+			L3:NodeType: ID val:ccc
+		L2:NodeType: TYPE_PROGRAM_ARG
+	L1:NodeType: DECLARATIONS_ROOT
+		L2:NodeType: DECLARATIONS
+			L3:NodeType: ID_LIST
+				L4:NodeType: ID val:aa
+				L4:NodeType: ID val:bb
+				L4:NodeType: ID val:cc
+			L3:NodeType: TYPE_INT
+	L1:NodeType: SUBPDECLARATIONS
+	L1:NodeType: STATEMENT_LIST
+		L2:NodeType: ASSIGN_OP
+			L3:NodeType: VARREF
+				L4:NodeType: ID val:aa
+				L4:NodeType: ARR_SUFFIXES
+			L:3,Id:20,BinaryExpr,oprtr: ADD
+				L4:NodeType: Number,Val: 0.500000
+				L:4,Id:18,BinaryExpr,oprtr: MULTIPLY
+					L5:NodeType: Number,Val: 0.800000
+					L5:NodeType: Number,Val: 2.000000
+NOTICE: Opening Scope as we perform semantic check
+NOTICE: We have added variable "aaa" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "bbb" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "ccc" in line 0 to symbol table. At depth 0 
+NOTICE: We have added variable "aa" in line 2 to symbol table. At depth 0 
+NOTICE: We have added variable "bb" in line 2 to symbol table. At depth 0 
+NOTICE: We have added variable "cc" in line 2 to symbol table. At depth 0 
+
+
+Semantic Error at or around Line(5):Incompatible LHS and RHS Types for assignment(TYPE_INT=TYPE_REAL).
+NOTICE: Closing Scope as we perform semantic check
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : aaa, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : bbb, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : ccc, Type:TYPE_VOID, Class VAR, Depth 0, Dimension:0 
+Name : aa, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+Name : bb, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+Name : cc, Type:TYPE_INT, Class VAR, Depth 0, Dimension:0 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+
+
+
+We are now printing all the symbol tables encountered
+****************************************
+*    Open Scope SymbolTable            *
+****************************************
+Name : aaa, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : bbb, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : ccc, Type:TYPE_VOID, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : aa, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : bb, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO Parameters 
+Name : cc, Type:TYPE_INT, Class VAR, Depth 0, IsArray:NO Parameters 
+****************************************
+*   Closed Scope SymbolTable           *
+****************************************
+********************************
+*    Semantic Check Done!      *
+********************************
